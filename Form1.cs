@@ -9,7 +9,7 @@ namespace Contact_Tracing_App
 
         private void startbtn_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            ContactTracingAppScreeningInfo form = new ContactTracingAppScreeningInfo();
             form.Show();
         }
 

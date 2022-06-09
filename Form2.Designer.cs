@@ -1,6 +1,6 @@
 ﻿namespace Contact_Tracing_App
 {
-    partial class Form2
+    partial class ContactTracingAppScreeningInfo
     {
         /// <summary>
         /// Required designer variable.
@@ -28,10 +28,23 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracingAppScreeningInfo));
+            this.SuspendLayout();
+            // 
+            // ContactTracingAppScreeningInfo
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form2";
+            this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(800, 532);
+            this.HelpButton = true;
+            this.Name = "ContactTracingAppScreeningInfo";
+            this.Text = "COVID 19 - SCREENING INFORMATION";
+            this.ResumeLayout(false);
+
         }
 
         #endregion

@@ -16,4 +16,4 @@ C:\Users\au\source\repos\Contact-Tracing-App\Contact-Tracing-App\obj\Debug\net6.
 C:\Users\au\source\repos\Contact-Tracing-App\Contact-Tracing-App\obj\Debug\net6.0-windows\Contact-Tracing-App.pdb
 C:\Users\au\source\repos\Contact-Tracing-App\Contact-Tracing-App\obj\Debug\net6.0-windows\Contact-Tracing-App.genruntimeconfig.cache
 C:\Users\au\source\repos\Contact-Tracing-App\Contact-Tracing-App\obj\Debug\net6.0-windows\ref\Contact-Tracing-App.dll
-C:\Users\au\source\repos\Contact-Tracing-App\Contact-Tracing-App\obj\Debug\net6.0-windows\Contact_Tracing_App.Form2.resources
+C:\Users\au\source\repos\Contact-Tracing-App\Contact-Tracing-App\obj\Debug\net6.0-windows\Contact_Tracing_App.ContactTracingAppScreeningInfo.resources

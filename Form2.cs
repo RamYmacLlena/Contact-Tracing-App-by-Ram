@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Contact_Tracing_App
 {
-    public partial class Form2 : Form
+    public partial class ContactTracingAppScreeningInfo : Form
     {
-        public Form2()
+        public ContactTracingAppScreeningInfo()
         {
             InitializeComponent();
         }
