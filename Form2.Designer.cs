@@ -64,6 +64,19 @@
             this.dosecheckbox1 = new System.Windows.Forms.CheckBox();
             this.dosecheckbox2 = new System.Windows.Forms.CheckBox();
             this.dosecheckbox3 = new System.Windows.Forms.CheckBox();
+            this.haveyouexprnlbl = new System.Windows.Forms.Label();
+            this.smelllbl = new System.Windows.Forms.Label();
+            this.tastelbl = new System.Windows.Forms.Label();
+            this.feverlbl = new System.Windows.Forms.Label();
+            this.nocheckbox4 = new System.Windows.Forms.CheckBox();
+            this.yescheckbox4 = new System.Windows.Forms.CheckBox();
+            this.nocheckbox5 = new System.Windows.Forms.CheckBox();
+            this.yescheckbox5 = new System.Windows.Forms.CheckBox();
+            this.nocheckbox6 = new System.Windows.Forms.CheckBox();
+            this.yescheckbox6 = new System.Windows.Forms.CheckBox();
+            this.submitbtn = new System.Windows.Forms.Button();
+            this.clearbtn = new System.Windows.Forms.Button();
+            this.exitbtn = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // titilelbl
@@ -447,6 +460,155 @@
             this.dosecheckbox3.Text = "3";
             this.dosecheckbox3.UseVisualStyleBackColor = false;
             // 
+            // haveyouexprnlbl
+            // 
+            this.haveyouexprnlbl.AutoSize = true;
+            this.haveyouexprnlbl.BackColor = System.Drawing.Color.Transparent;
+            this.haveyouexprnlbl.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.haveyouexprnlbl.Location = new System.Drawing.Point(527, 344);
+            this.haveyouexprnlbl.Name = "haveyouexprnlbl";
+            this.haveyouexprnlbl.Size = new System.Drawing.Size(195, 18);
+            this.haveyouexprnlbl.TabIndex = 35;
+            this.haveyouexprnlbl.Text = "HAVE YOU EXPERIENCED :";
+            // 
+            // smelllbl
+            // 
+            this.smelllbl.AutoSize = true;
+            this.smelllbl.BackColor = System.Drawing.Color.Transparent;
+            this.smelllbl.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.smelllbl.Location = new System.Drawing.Point(525, 435);
+            this.smelllbl.Name = "smelllbl";
+            this.smelllbl.Size = new System.Drawing.Size(136, 18);
+            this.smelllbl.TabIndex = 37;
+            this.smelllbl.Text = "3. LOSS OF SMELL?";
+            // 
+            // tastelbl
+            // 
+            this.tastelbl.AutoSize = true;
+            this.tastelbl.BackColor = System.Drawing.Color.Transparent;
+            this.tastelbl.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.tastelbl.Location = new System.Drawing.Point(525, 405);
+            this.tastelbl.Name = "tastelbl";
+            this.tastelbl.Size = new System.Drawing.Size(134, 18);
+            this.tastelbl.TabIndex = 36;
+            this.tastelbl.Text = "2. LOSS OF TASTE?";
+            // 
+            // feverlbl
+            // 
+            this.feverlbl.AutoSize = true;
+            this.feverlbl.BackColor = System.Drawing.Color.Transparent;
+            this.feverlbl.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.feverlbl.Location = new System.Drawing.Point(525, 375);
+            this.feverlbl.Name = "feverlbl";
+            this.feverlbl.Size = new System.Drawing.Size(75, 18);
+            this.feverlbl.TabIndex = 38;
+            this.feverlbl.Text = "1. FEVER?";
+            // 
+            // nocheckbox4
+            // 
+            this.nocheckbox4.AutoSize = true;
+            this.nocheckbox4.BackColor = System.Drawing.Color.Transparent;
+            this.nocheckbox4.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nocheckbox4.Location = new System.Drawing.Point(726, 375);
+            this.nocheckbox4.Name = "nocheckbox4";
+            this.nocheckbox4.Size = new System.Drawing.Size(51, 22);
+            this.nocheckbox4.TabIndex = 40;
+            this.nocheckbox4.Text = "NO";
+            this.nocheckbox4.UseVisualStyleBackColor = false;
+            // 
+            // yescheckbox4
+            // 
+            this.yescheckbox4.AutoSize = true;
+            this.yescheckbox4.BackColor = System.Drawing.Color.Transparent;
+            this.yescheckbox4.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.yescheckbox4.Location = new System.Drawing.Point(664, 375);
+            this.yescheckbox4.Name = "yescheckbox4";
+            this.yescheckbox4.Size = new System.Drawing.Size(56, 22);
+            this.yescheckbox4.TabIndex = 39;
+            this.yescheckbox4.Text = "YES";
+            this.yescheckbox4.UseVisualStyleBackColor = false;
+            // 
+            // nocheckbox5
+            // 
+            this.nocheckbox5.AutoSize = true;
+            this.nocheckbox5.BackColor = System.Drawing.Color.Transparent;
+            this.nocheckbox5.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nocheckbox5.Location = new System.Drawing.Point(726, 405);
+            this.nocheckbox5.Name = "nocheckbox5";
+            this.nocheckbox5.Size = new System.Drawing.Size(51, 22);
+            this.nocheckbox5.TabIndex = 42;
+            this.nocheckbox5.Text = "NO";
+            this.nocheckbox5.UseVisualStyleBackColor = false;
+            // 
+            // yescheckbox5
+            // 
+            this.yescheckbox5.AutoSize = true;
+            this.yescheckbox5.BackColor = System.Drawing.Color.Transparent;
+            this.yescheckbox5.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.yescheckbox5.Location = new System.Drawing.Point(664, 405);
+            this.yescheckbox5.Name = "yescheckbox5";
+            this.yescheckbox5.Size = new System.Drawing.Size(56, 22);
+            this.yescheckbox5.TabIndex = 41;
+            this.yescheckbox5.Text = "YES";
+            this.yescheckbox5.UseVisualStyleBackColor = false;
+            // 
+            // nocheckbox6
+            // 
+            this.nocheckbox6.AutoSize = true;
+            this.nocheckbox6.BackColor = System.Drawing.Color.Transparent;
+            this.nocheckbox6.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.nocheckbox6.Location = new System.Drawing.Point(726, 434);
+            this.nocheckbox6.Name = "nocheckbox6";
+            this.nocheckbox6.Size = new System.Drawing.Size(51, 22);
+            this.nocheckbox6.TabIndex = 44;
+            this.nocheckbox6.Text = "NO";
+            this.nocheckbox6.UseVisualStyleBackColor = false;
+            // 
+            // yescheckbox6
+            // 
+            this.yescheckbox6.AutoSize = true;
+            this.yescheckbox6.BackColor = System.Drawing.Color.Transparent;
+            this.yescheckbox6.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.yescheckbox6.Location = new System.Drawing.Point(664, 434);
+            this.yescheckbox6.Name = "yescheckbox6";
+            this.yescheckbox6.Size = new System.Drawing.Size(56, 22);
+            this.yescheckbox6.TabIndex = 43;
+            this.yescheckbox6.Text = "YES";
+            this.yescheckbox6.UseVisualStyleBackColor = false;
+            // 
+            // submitbtn
+            // 
+            this.submitbtn.BackColor = System.Drawing.Color.Aqua;
+            this.submitbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.submitbtn.Location = new System.Drawing.Point(340, 482);
+            this.submitbtn.Name = "submitbtn";
+            this.submitbtn.Size = new System.Drawing.Size(123, 39);
+            this.submitbtn.TabIndex = 45;
+            this.submitbtn.Text = "SUBMIT";
+            this.submitbtn.UseVisualStyleBackColor = false;
+            // 
+            // clearbtn
+            // 
+            this.clearbtn.BackColor = System.Drawing.Color.Aqua;
+            this.clearbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.clearbtn.Location = new System.Drawing.Point(107, 482);
+            this.clearbtn.Name = "clearbtn";
+            this.clearbtn.Size = new System.Drawing.Size(123, 39);
+            this.clearbtn.TabIndex = 46;
+            this.clearbtn.Text = "CLEAR";
+            this.clearbtn.UseVisualStyleBackColor = false;
+            // 
+            // exitbtn
+            // 
+            this.exitbtn.BackColor = System.Drawing.Color.Aqua;
+            this.exitbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.exitbtn.Location = new System.Drawing.Point(566, 481);
+            this.exitbtn.Name = "exitbtn";
+            this.exitbtn.Size = new System.Drawing.Size(123, 39);
+            this.exitbtn.TabIndex = 47;
+            this.exitbtn.Text = "EXIT";
+            this.exitbtn.UseVisualStyleBackColor = false;
+            // 
             // ContactTracingAppScreeningInfo
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -456,6 +618,19 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 532);
+            this.Controls.Add(this.exitbtn);
+            this.Controls.Add(this.clearbtn);
+            this.Controls.Add(this.submitbtn);
+            this.Controls.Add(this.nocheckbox6);
+            this.Controls.Add(this.yescheckbox6);
+            this.Controls.Add(this.nocheckbox5);
+            this.Controls.Add(this.yescheckbox5);
+            this.Controls.Add(this.nocheckbox4);
+            this.Controls.Add(this.yescheckbox4);
+            this.Controls.Add(this.feverlbl);
+            this.Controls.Add(this.smelllbl);
+            this.Controls.Add(this.tastelbl);
+            this.Controls.Add(this.haveyouexprnlbl);
             this.Controls.Add(this.dosecheckbox3);
             this.Controls.Add(this.dosecheckbox2);
             this.Controls.Add(this.dosecheckbox1);
@@ -537,5 +712,18 @@
         private CheckBox dosecheckbox1;
         private CheckBox dosecheckbox2;
         private CheckBox dosecheckbox3;
+        private Label haveyouexprnlbl;
+        private Label smelllbl;
+        private Label tastelbl;
+        private Label feverlbl;
+        private CheckBox nocheckbox4;
+        private CheckBox yescheckbox4;
+        private CheckBox nocheckbox5;
+        private CheckBox yescheckbox5;
+        private CheckBox nocheckbox6;
+        private CheckBox yescheckbox6;
+        private Button submitbtn;
+        private Button clearbtn;
+        private Button exitbtn;
     }
 }
