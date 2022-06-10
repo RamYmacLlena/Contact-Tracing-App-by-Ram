@@ -53,13 +53,6 @@
             this.yescheckbox2 = new System.Windows.Forms.CheckBox();
             this.nocheckbox1 = new System.Windows.Forms.CheckBox();
             this.nocheckbox2 = new System.Windows.Forms.CheckBox();
-            this.boostershotlbl = new System.Windows.Forms.Label();
-            this.nocheckbox3 = new System.Windows.Forms.CheckBox();
-            this.yescheckbox3 = new System.Windows.Forms.CheckBox();
-            this.doselbl = new System.Windows.Forms.Label();
-            this.dosecheckbox1 = new System.Windows.Forms.CheckBox();
-            this.dosecheckbox2 = new System.Windows.Forms.CheckBox();
-            this.dosecheckbox3 = new System.Windows.Forms.CheckBox();
             this.haveyouexprnlbl = new System.Windows.Forms.Label();
             this.smelllbl = new System.Windows.Forms.Label();
             this.tastelbl = new System.Windows.Forms.Label();
@@ -240,7 +233,7 @@
             this.vaccineinfolbl.AutoSize = true;
             this.vaccineinfolbl.BackColor = System.Drawing.Color.Transparent;
             this.vaccineinfolbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.vaccineinfolbl.Location = new System.Drawing.Point(107, 294);
+            this.vaccineinfolbl.Location = new System.Drawing.Point(70, 297);
             this.vaccineinfolbl.Name = "vaccineinfolbl";
             this.vaccineinfolbl.Size = new System.Drawing.Size(207, 23);
             this.vaccineinfolbl.TabIndex = 15;
@@ -251,7 +244,7 @@
             this.healthhistorylbl.AutoSize = true;
             this.healthhistorylbl.BackColor = System.Drawing.Color.Transparent;
             this.healthhistorylbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.healthhistorylbl.Location = new System.Drawing.Point(466, 287);
+            this.healthhistorylbl.Location = new System.Drawing.Point(416, 286);
             this.healthhistorylbl.Name = "healthhistorylbl";
             this.healthhistorylbl.Size = new System.Drawing.Size(161, 23);
             this.healthhistorylbl.TabIndex = 16;
@@ -262,7 +255,7 @@
             this.dayslbl.AutoSize = true;
             this.dayslbl.BackColor = System.Drawing.Color.Transparent;
             this.dayslbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dayslbl.Location = new System.Drawing.Point(465, 310);
+            this.dayslbl.Location = new System.Drawing.Point(415, 309);
             this.dayslbl.Name = "dayslbl";
             this.dayslbl.Size = new System.Drawing.Size(162, 23);
             this.dayslbl.TabIndex = 17;
@@ -272,10 +265,10 @@
             // 
             this.firstdoselbl.AutoSize = true;
             this.firstdoselbl.BackColor = System.Drawing.Color.Transparent;
-            this.firstdoselbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.firstdoselbl.Location = new System.Drawing.Point(33, 337);
+            this.firstdoselbl.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.firstdoselbl.Location = new System.Drawing.Point(93, 335);
             this.firstdoselbl.Name = "firstdoselbl";
-            this.firstdoselbl.Size = new System.Drawing.Size(116, 23);
+            this.firstdoselbl.Size = new System.Drawing.Size(151, 29);
             this.firstdoselbl.TabIndex = 18;
             this.firstdoselbl.Text = "FIRST DOSE?";
             // 
@@ -283,10 +276,10 @@
             // 
             this.seconddoselbl.AutoSize = true;
             this.seconddoselbl.BackColor = System.Drawing.Color.Transparent;
-            this.seconddoselbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.seconddoselbl.Location = new System.Drawing.Point(33, 394);
+            this.seconddoselbl.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.seconddoselbl.Location = new System.Drawing.Point(82, 405);
             this.seconddoselbl.Name = "seconddoselbl";
-            this.seconddoselbl.Size = new System.Drawing.Size(136, 23);
+            this.seconddoselbl.Size = new System.Drawing.Size(175, 29);
             this.seconddoselbl.TabIndex = 19;
             this.seconddoselbl.Text = "SECOND DOSE?";
             // 
@@ -295,7 +288,7 @@
             this.yescheckbox1.AutoSize = true;
             this.yescheckbox1.BackColor = System.Drawing.Color.Transparent;
             this.yescheckbox1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.yescheckbox1.Location = new System.Drawing.Point(180, 340);
+            this.yescheckbox1.Location = new System.Drawing.Point(113, 376);
             this.yescheckbox1.Name = "yescheckbox1";
             this.yescheckbox1.Size = new System.Drawing.Size(56, 22);
             this.yescheckbox1.TabIndex = 24;
@@ -307,7 +300,7 @@
             this.yescheckbox2.AutoSize = true;
             this.yescheckbox2.BackColor = System.Drawing.Color.Transparent;
             this.yescheckbox2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.yescheckbox2.Location = new System.Drawing.Point(180, 397);
+            this.yescheckbox2.Location = new System.Drawing.Point(113, 445);
             this.yescheckbox2.Name = "yescheckbox2";
             this.yescheckbox2.Size = new System.Drawing.Size(56, 22);
             this.yescheckbox2.TabIndex = 25;
@@ -319,7 +312,7 @@
             this.nocheckbox1.AutoSize = true;
             this.nocheckbox1.BackColor = System.Drawing.Color.Transparent;
             this.nocheckbox1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nocheckbox1.Location = new System.Drawing.Point(242, 340);
+            this.nocheckbox1.Location = new System.Drawing.Point(175, 376);
             this.nocheckbox1.Name = "nocheckbox1";
             this.nocheckbox1.Size = new System.Drawing.Size(51, 22);
             this.nocheckbox1.TabIndex = 26;
@@ -331,94 +324,12 @@
             this.nocheckbox2.AutoSize = true;
             this.nocheckbox2.BackColor = System.Drawing.Color.Transparent;
             this.nocheckbox2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nocheckbox2.Location = new System.Drawing.Point(242, 397);
+            this.nocheckbox2.Location = new System.Drawing.Point(175, 445);
             this.nocheckbox2.Name = "nocheckbox2";
             this.nocheckbox2.Size = new System.Drawing.Size(51, 22);
             this.nocheckbox2.TabIndex = 27;
             this.nocheckbox2.Text = "NO";
             this.nocheckbox2.UseVisualStyleBackColor = false;
-            // 
-            // boostershotlbl
-            // 
-            this.boostershotlbl.AutoSize = true;
-            this.boostershotlbl.BackColor = System.Drawing.Color.Transparent;
-            this.boostershotlbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.boostershotlbl.Location = new System.Drawing.Point(33, 443);
-            this.boostershotlbl.Name = "boostershotlbl";
-            this.boostershotlbl.Size = new System.Drawing.Size(150, 23);
-            this.boostershotlbl.TabIndex = 28;
-            this.boostershotlbl.Text = "BOOSTER SHOT?";
-            // 
-            // nocheckbox3
-            // 
-            this.nocheckbox3.AutoSize = true;
-            this.nocheckbox3.BackColor = System.Drawing.Color.Transparent;
-            this.nocheckbox3.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.nocheckbox3.Location = new System.Drawing.Point(242, 446);
-            this.nocheckbox3.Name = "nocheckbox3";
-            this.nocheckbox3.Size = new System.Drawing.Size(51, 22);
-            this.nocheckbox3.TabIndex = 29;
-            this.nocheckbox3.Text = "NO";
-            this.nocheckbox3.UseVisualStyleBackColor = false;
-            // 
-            // yescheckbox3
-            // 
-            this.yescheckbox3.AutoSize = true;
-            this.yescheckbox3.BackColor = System.Drawing.Color.Transparent;
-            this.yescheckbox3.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.yescheckbox3.Location = new System.Drawing.Point(180, 446);
-            this.yescheckbox3.Name = "yescheckbox3";
-            this.yescheckbox3.Size = new System.Drawing.Size(56, 22);
-            this.yescheckbox3.TabIndex = 30;
-            this.yescheckbox3.Text = "YES";
-            this.yescheckbox3.UseVisualStyleBackColor = false;
-            // 
-            // doselbl
-            // 
-            this.doselbl.AutoSize = true;
-            this.doselbl.BackColor = System.Drawing.Color.Transparent;
-            this.doselbl.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.doselbl.Location = new System.Drawing.Point(340, 425);
-            this.doselbl.Name = "doselbl";
-            this.doselbl.Size = new System.Drawing.Size(69, 18);
-            this.doselbl.TabIndex = 31;
-            this.doselbl.Text = "DOSE/S :";
-            // 
-            // dosecheckbox1
-            // 
-            this.dosecheckbox1.AutoSize = true;
-            this.dosecheckbox1.BackColor = System.Drawing.Color.Transparent;
-            this.dosecheckbox1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dosecheckbox1.Location = new System.Drawing.Point(310, 446);
-            this.dosecheckbox1.Name = "dosecheckbox1";
-            this.dosecheckbox1.Size = new System.Drawing.Size(36, 22);
-            this.dosecheckbox1.TabIndex = 32;
-            this.dosecheckbox1.Text = "1";
-            this.dosecheckbox1.UseVisualStyleBackColor = false;
-            // 
-            // dosecheckbox2
-            // 
-            this.dosecheckbox2.AutoSize = true;
-            this.dosecheckbox2.BackColor = System.Drawing.Color.Transparent;
-            this.dosecheckbox2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dosecheckbox2.Location = new System.Drawing.Point(355, 446);
-            this.dosecheckbox2.Name = "dosecheckbox2";
-            this.dosecheckbox2.Size = new System.Drawing.Size(37, 22);
-            this.dosecheckbox2.TabIndex = 33;
-            this.dosecheckbox2.Text = "2";
-            this.dosecheckbox2.UseVisualStyleBackColor = false;
-            // 
-            // dosecheckbox3
-            // 
-            this.dosecheckbox3.AutoSize = true;
-            this.dosecheckbox3.BackColor = System.Drawing.Color.Transparent;
-            this.dosecheckbox3.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dosecheckbox3.Location = new System.Drawing.Point(396, 446);
-            this.dosecheckbox3.Name = "dosecheckbox3";
-            this.dosecheckbox3.Size = new System.Drawing.Size(37, 22);
-            this.dosecheckbox3.TabIndex = 34;
-            this.dosecheckbox3.Text = "3";
-            this.dosecheckbox3.UseVisualStyleBackColor = false;
             // 
             // haveyouexprnlbl
             // 
@@ -546,6 +457,7 @@
             this.submitbtn.TabIndex = 45;
             this.submitbtn.Text = "SUBMIT";
             this.submitbtn.UseVisualStyleBackColor = false;
+            this.submitbtn.Click += new System.EventHandler(this.submitbtn_Click);
             // 
             // clearbtn
             // 
@@ -574,7 +486,7 @@
             this.contposlbl1.AutoSize = true;
             this.contposlbl1.BackColor = System.Drawing.Color.Transparent;
             this.contposlbl1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.contposlbl1.Location = new System.Drawing.Point(320, 344);
+            this.contposlbl1.Location = new System.Drawing.Point(309, 362);
             this.contposlbl1.Name = "contposlbl1";
             this.contposlbl1.Size = new System.Drawing.Size(189, 18);
             this.contposlbl1.TabIndex = 48;
@@ -585,7 +497,7 @@
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(350, 362);
+            this.label1.Location = new System.Drawing.Point(339, 380);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(124, 18);
             this.label1.TabIndex = 49;
@@ -596,7 +508,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(314, 380);
+            this.label2.Location = new System.Drawing.Point(303, 398);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(197, 18);
             this.label2.TabIndex = 50;
@@ -607,7 +519,7 @@
             this.checkBox1.AutoSize = true;
             this.checkBox1.BackColor = System.Drawing.Color.Transparent;
             this.checkBox1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox1.Location = new System.Drawing.Point(412, 401);
+            this.checkBox1.Location = new System.Drawing.Point(401, 419);
             this.checkBox1.Name = "checkBox1";
             this.checkBox1.Size = new System.Drawing.Size(51, 22);
             this.checkBox1.TabIndex = 52;
@@ -619,7 +531,7 @@
             this.checkBox2.AutoSize = true;
             this.checkBox2.BackColor = System.Drawing.Color.Transparent;
             this.checkBox2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.checkBox2.Location = new System.Drawing.Point(350, 401);
+            this.checkBox2.Location = new System.Drawing.Point(339, 419);
             this.checkBox2.Name = "checkBox2";
             this.checkBox2.Size = new System.Drawing.Size(56, 22);
             this.checkBox2.TabIndex = 51;
@@ -653,13 +565,6 @@
             this.Controls.Add(this.smelllbl);
             this.Controls.Add(this.tastelbl);
             this.Controls.Add(this.haveyouexprnlbl);
-            this.Controls.Add(this.dosecheckbox3);
-            this.Controls.Add(this.dosecheckbox2);
-            this.Controls.Add(this.dosecheckbox1);
-            this.Controls.Add(this.doselbl);
-            this.Controls.Add(this.yescheckbox3);
-            this.Controls.Add(this.nocheckbox3);
-            this.Controls.Add(this.boostershotlbl);
             this.Controls.Add(this.nocheckbox2);
             this.Controls.Add(this.nocheckbox1);
             this.Controls.Add(this.yescheckbox2);
@@ -689,6 +594,7 @@
             this.Name = "ContactTracingAppScreeningInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CONTACT TRACING FORM";
+            this.Load += new System.EventHandler(this.ContactTracingAppScreeningInfo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -720,13 +626,6 @@
         private CheckBox yescheckbox2;
         private CheckBox nocheckbox1;
         private CheckBox nocheckbox2;
-        private Label boostershotlbl;
-        private CheckBox nocheckbox3;
-        private CheckBox yescheckbox3;
-        private Label doselbl;
-        private CheckBox dosecheckbox1;
-        private CheckBox dosecheckbox2;
-        private CheckBox dosecheckbox3;
         private Label haveyouexprnlbl;
         private Label smelllbl;
         private Label tastelbl;

@@ -53,7 +53,7 @@
             // personalinfolbl
             // 
             this.personalinfolbl.AutoSize = true;
-            this.personalinfolbl.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.personalinfolbl.BackColor = System.Drawing.Color.Transparent;
             this.personalinfolbl.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.personalinfolbl.Location = new System.Drawing.Point(34, 244);
             this.personalinfolbl.Name = "personalinfolbl";
