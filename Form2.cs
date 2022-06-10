@@ -35,12 +35,81 @@ namespace Contact_Tracing_App
 
         private void submitbtn_Click(object sender, EventArgs e)
         {
+
+            string FirstDoseAnswer = null;
+            string SecondDoseAnswer = null;
+            string TestPositiveAnswer = null;
+            string FeverAnswer = null;
+            string LossofTasteAnswer = null;
+            string LossofSmellAnswer = null;
+
+            if (rdbtnyesfrstdose.Checked)
+            {
+                FirstDoseAnswer = "YES";
+            }
+            else if (rdbtnnofrstdose.Checked)
+            {
+                FirstDoseAnswer = "NO";
+            }
+
+            if (rdbtnyesscnddose.Checked)
+            {
+                SecondDoseAnswer = "YES";
+            }
+            else if (rdbtnnoscnddose.Checked)
+            {
+                SecondDoseAnswer = "NO";
+            }
+
+            if (rdbtnyeststpstv.Checked)
+            {
+                TestPositiveAnswer = "YES";
+            }
+            else if (rdbtnnotstpstv.Checked)
+            {
+                TestPositiveAnswer = "NO";
+            }
+
+            if (rdbtnyesfever.Checked)
+            {
+                FeverAnswer = "YES";
+            }
+            else if (rdbtnnofever.Checked)
+            {
+                FeverAnswer = "NO";
+            }
+
+            if (rdbtnyeslossoftaste.Checked)
+            {
+                LossofTasteAnswer = "YES";
+            }
+            else if (rdbtnnolossoftaste.Checked)
+            {
+                LossofTasteAnswer = "NO";
+            }
+
+            if (rdbtnyeslossofsml.Checked)
+            {
+                LossofSmellAnswer = "YES";
+            }
+            else if (rdbtnnolossofsml.Checked)
+            {
+                LossofSmellAnswer = "NO";
+            }
+
+
             if ((nametxtbox.Text == "") ||
                  (addresstxtbox.Text == "") ||
                  (contactnotxtbox.Text == "") ||
                  (agetxtbox.Text == "") ||
                  (sextxtbox.Text == "") ||
-                 (temperaturetxtbox.Text == "")  
+                 (temperaturetxtbox.Text == "") ||
+                 ((!rdbtnyesfrstdose.Checked) && (!rdbtnnofrstdose.Checked)) ||
+                 ((!rdbtnyesscnddose.Checked) && (!rdbtnnoscnddose.Checked)) ||
+                 ((!rdbtnyeststpstv.Checked) && (!rdbtnnotstpstv.Checked)) ||
+                 ((!rdbtnyesfever.Checked) && (!rdbtnnofever.Checked)) ||
+                 ((!rdbtnyeslossoftaste.Checked) && (!rdbtnnolossoftaste.Checked)) ||
+                 ((!rdbtnyeslossofsml.Checked) && (!rdbtnnolossofsml.Checked))
                  )
             {
                 MessageBox.Show("Please answer the blank sections!");
@@ -54,13 +123,13 @@ namespace Contact_Tracing_App
                         file.WriteLine("Age : " + agetxtbox.Text);
                         file.WriteLine("Sex : " + sextxtbox.Text);
                         file.WriteLine("Temperature : " + temperaturetxtbox.Text);
-                        file.WriteLine("First Dose : " + grpboxfirstdose.Text);
-                        file.WriteLine("Second Dose : " + grpboxseconddose.Text);
-                        file.WriteLine("Have had contact with someone who tested postive? " + grpboxtestedpstv.Text);
+                        file.WriteLine("First Dose : " + FirstDoseAnswer);
+                        file.WriteLine("Second Dose : " + SecondDoseAnswer);
+                        file.WriteLine("Have had contact with someone who tested postive? " + TestPositiveAnswer);
                         file.WriteLine(haveyouexprnlbl.Text + " ");
-                        file.WriteLine("1. Fever? " + grpboxfever.Text);
-                        file.WriteLine("2. Loss of Taste? " + grpboxlossoftaste.Text);
-                        file.WriteLine("3. Loss of Smell? " + grpboxlossofsmell.Text);
+                        file.WriteLine("1. Fever? " + FeverAnswer);
+                        file.WriteLine("2. Loss of Taste? " + LossofTasteAnswer);
+                        file.WriteLine("3. Loss of Smell? " + LossofSmellAnswer);
                         file.Close();
                     }
             
