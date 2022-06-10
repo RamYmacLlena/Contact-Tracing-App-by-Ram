@@ -416,6 +416,7 @@
             this.lossoftastenochckbox.TabIndex = 42;
             this.lossoftastenochckbox.Text = "NO";
             this.lossoftastenochckbox.UseVisualStyleBackColor = false;
+            this.lossoftastenochckbox.CheckedChanged += new System.EventHandler(this.lossoftastenochckbox_CheckedChanged);
             // 
             // lossoftasteyeschckbox
             // 
@@ -428,6 +429,7 @@
             this.lossoftasteyeschckbox.TabIndex = 41;
             this.lossoftasteyeschckbox.Text = "YES";
             this.lossoftasteyeschckbox.UseVisualStyleBackColor = false;
+            this.lossoftasteyeschckbox.CheckedChanged += new System.EventHandler(this.lossoftasteyeschckbox_CheckedChanged);
             // 
             // lossofsmellnochckbox
             // 
@@ -440,6 +442,7 @@
             this.lossofsmellnochckbox.TabIndex = 44;
             this.lossofsmellnochckbox.Text = "NO";
             this.lossofsmellnochckbox.UseVisualStyleBackColor = false;
+            this.lossofsmellnochckbox.CheckedChanged += new System.EventHandler(this.lossofsmellnochckbox_CheckedChanged);
             // 
             // lossofsmellyeschckbox
             // 
@@ -452,6 +455,7 @@
             this.lossofsmellyeschckbox.TabIndex = 43;
             this.lossofsmellyeschckbox.Text = "YES";
             this.lossofsmellyeschckbox.UseVisualStyleBackColor = false;
+            this.lossofsmellyeschckbox.CheckedChanged += new System.EventHandler(this.lossofsmellyeschckbox_CheckedChanged);
             // 
             // submitbtn
             // 

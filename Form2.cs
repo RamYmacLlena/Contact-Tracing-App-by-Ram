@@ -154,5 +154,25 @@ namespace Contact_Tracing_App
         {
             this.feveryeschckbox.Enabled = !fevernochckbox.Checked;
         }
+
+        private void lossoftasteyeschckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.lossoftastenochckbox.Enabled = !lossoftasteyeschckbox.Checked;
+        }
+
+        private void lossoftastenochckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.lossoftasteyeschckbox.Enabled = !lossoftastenochckbox.Checked;
+        }
+
+        private void lossofsmellyeschckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.lossofsmellnochckbox.Enabled = !lossofsmellyeschckbox.Checked;
+        }
+
+        private void lossofsmellnochckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.lossofsmellyeschckbox.Enabled = !lossofsmellnochckbox.Checked;
+        }
     }
 }
