@@ -49,28 +49,40 @@
             this.dayslbl = new System.Windows.Forms.Label();
             this.firstdoselbl = new System.Windows.Forms.Label();
             this.seconddoselbl = new System.Windows.Forms.Label();
-            this.firstdoseyeschckbx = new System.Windows.Forms.CheckBox();
-            this.seconddoseyeschckbx = new System.Windows.Forms.CheckBox();
-            this.firstdosenochckbx = new System.Windows.Forms.CheckBox();
-            this.seconddosenochckbx = new System.Windows.Forms.CheckBox();
             this.haveyouexprnlbl = new System.Windows.Forms.Label();
             this.smelllbl = new System.Windows.Forms.Label();
             this.tastelbl = new System.Windows.Forms.Label();
             this.feverlbl = new System.Windows.Forms.Label();
-            this.fevernochckbox = new System.Windows.Forms.CheckBox();
-            this.feveryeschckbox = new System.Windows.Forms.CheckBox();
-            this.lossoftastenochckbox = new System.Windows.Forms.CheckBox();
-            this.lossoftasteyeschckbox = new System.Windows.Forms.CheckBox();
-            this.lossofsmellnochckbox = new System.Windows.Forms.CheckBox();
-            this.lossofsmellyeschckbox = new System.Windows.Forms.CheckBox();
             this.submitbtn = new System.Windows.Forms.Button();
             this.clearbtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
             this.contposlbl1 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.testpostnochckbox = new System.Windows.Forms.CheckBox();
-            this.testpostyeschckbox = new System.Windows.Forms.CheckBox();
+            this.rdbtnyesfrstdose = new System.Windows.Forms.RadioButton();
+            this.grpboxfirstdose = new System.Windows.Forms.GroupBox();
+            this.rdbtnnofrstdose = new System.Windows.Forms.RadioButton();
+            this.grpboxseconddose = new System.Windows.Forms.GroupBox();
+            this.rdbtnnoscnddose = new System.Windows.Forms.RadioButton();
+            this.rdbtnyesscnddose = new System.Windows.Forms.RadioButton();
+            this.grpboxtestedpstv = new System.Windows.Forms.GroupBox();
+            this.rdbtnnotstpstv = new System.Windows.Forms.RadioButton();
+            this.rdbtnyeststpstv = new System.Windows.Forms.RadioButton();
+            this.grpboxlossoftaste = new System.Windows.Forms.GroupBox();
+            this.rdbtnnolossofsml = new System.Windows.Forms.RadioButton();
+            this.rdbtnyeslossofsml = new System.Windows.Forms.RadioButton();
+            this.grpboxlossofsmell = new System.Windows.Forms.GroupBox();
+            this.rdbtnnolossoftaste = new System.Windows.Forms.RadioButton();
+            this.rdbtnyeslossoftaste = new System.Windows.Forms.RadioButton();
+            this.grpboxfever = new System.Windows.Forms.GroupBox();
+            this.rdbtnnofever = new System.Windows.Forms.RadioButton();
+            this.rdbtnyesfever = new System.Windows.Forms.RadioButton();
+            this.grpboxfirstdose.SuspendLayout();
+            this.grpboxseconddose.SuspendLayout();
+            this.grpboxtestedpstv.SuspendLayout();
+            this.grpboxlossoftaste.SuspendLayout();
+            this.grpboxlossofsmell.SuspendLayout();
+            this.grpboxfever.SuspendLayout();
             this.SuspendLayout();
             // 
             // titilelbl
@@ -266,7 +278,7 @@
             this.firstdoselbl.AutoSize = true;
             this.firstdoselbl.BackColor = System.Drawing.Color.Transparent;
             this.firstdoselbl.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.firstdoselbl.Location = new System.Drawing.Point(93, 335);
+            this.firstdoselbl.Location = new System.Drawing.Point(98, 330);
             this.firstdoselbl.Name = "firstdoselbl";
             this.firstdoselbl.Size = new System.Drawing.Size(151, 29);
             this.firstdoselbl.TabIndex = 18;
@@ -282,58 +294,6 @@
             this.seconddoselbl.Size = new System.Drawing.Size(175, 29);
             this.seconddoselbl.TabIndex = 19;
             this.seconddoselbl.Text = "SECOND DOSE?";
-            // 
-            // firstdoseyeschckbx
-            // 
-            this.firstdoseyeschckbx.AutoSize = true;
-            this.firstdoseyeschckbx.BackColor = System.Drawing.Color.Transparent;
-            this.firstdoseyeschckbx.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.firstdoseyeschckbx.Location = new System.Drawing.Point(113, 376);
-            this.firstdoseyeschckbx.Name = "firstdoseyeschckbx";
-            this.firstdoseyeschckbx.Size = new System.Drawing.Size(56, 22);
-            this.firstdoseyeschckbx.TabIndex = 24;
-            this.firstdoseyeschckbx.Text = "YES";
-            this.firstdoseyeschckbx.UseVisualStyleBackColor = false;
-            this.firstdoseyeschckbx.CheckedChanged += new System.EventHandler(this.firstdoseyeschckbx_CheckedChanged);
-            // 
-            // seconddoseyeschckbx
-            // 
-            this.seconddoseyeschckbx.AutoSize = true;
-            this.seconddoseyeschckbx.BackColor = System.Drawing.Color.Transparent;
-            this.seconddoseyeschckbx.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.seconddoseyeschckbx.Location = new System.Drawing.Point(113, 445);
-            this.seconddoseyeschckbx.Name = "seconddoseyeschckbx";
-            this.seconddoseyeschckbx.Size = new System.Drawing.Size(56, 22);
-            this.seconddoseyeschckbx.TabIndex = 25;
-            this.seconddoseyeschckbx.Text = "YES";
-            this.seconddoseyeschckbx.UseVisualStyleBackColor = false;
-            this.seconddoseyeschckbx.CheckedChanged += new System.EventHandler(this.seconddoseyeschckbx_CheckedChanged);
-            // 
-            // firstdosenochckbx
-            // 
-            this.firstdosenochckbx.AutoSize = true;
-            this.firstdosenochckbx.BackColor = System.Drawing.Color.Transparent;
-            this.firstdosenochckbx.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.firstdosenochckbx.Location = new System.Drawing.Point(175, 376);
-            this.firstdosenochckbx.Name = "firstdosenochckbx";
-            this.firstdosenochckbx.Size = new System.Drawing.Size(51, 22);
-            this.firstdosenochckbx.TabIndex = 26;
-            this.firstdosenochckbx.Text = "NO";
-            this.firstdosenochckbx.UseVisualStyleBackColor = false;
-            this.firstdosenochckbx.CheckedChanged += new System.EventHandler(this.firstdosenochckbx_CheckedChanged);
-            // 
-            // seconddosenochckbx
-            // 
-            this.seconddosenochckbx.AutoSize = true;
-            this.seconddosenochckbx.BackColor = System.Drawing.Color.Transparent;
-            this.seconddosenochckbx.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.seconddosenochckbx.Location = new System.Drawing.Point(175, 445);
-            this.seconddosenochckbx.Name = "seconddosenochckbx";
-            this.seconddosenochckbx.Size = new System.Drawing.Size(51, 22);
-            this.seconddosenochckbx.TabIndex = 27;
-            this.seconddosenochckbx.Text = "NO";
-            this.seconddosenochckbx.UseVisualStyleBackColor = false;
-            this.seconddosenochckbx.CheckedChanged += new System.EventHandler(this.seconddosenochckbx_CheckedChanged);
             // 
             // haveyouexprnlbl
             // 
@@ -378,84 +338,6 @@
             this.feverlbl.Size = new System.Drawing.Size(75, 18);
             this.feverlbl.TabIndex = 38;
             this.feverlbl.Text = "1. FEVER?";
-            // 
-            // fevernochckbox
-            // 
-            this.fevernochckbox.AutoSize = true;
-            this.fevernochckbox.BackColor = System.Drawing.Color.Transparent;
-            this.fevernochckbox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.fevernochckbox.Location = new System.Drawing.Point(726, 375);
-            this.fevernochckbox.Name = "fevernochckbox";
-            this.fevernochckbox.Size = new System.Drawing.Size(51, 22);
-            this.fevernochckbox.TabIndex = 40;
-            this.fevernochckbox.Text = "NO";
-            this.fevernochckbox.UseVisualStyleBackColor = false;
-            this.fevernochckbox.CheckedChanged += new System.EventHandler(this.fevernochckbox_CheckedChanged);
-            // 
-            // feveryeschckbox
-            // 
-            this.feveryeschckbox.AutoSize = true;
-            this.feveryeschckbox.BackColor = System.Drawing.Color.Transparent;
-            this.feveryeschckbox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.feveryeschckbox.Location = new System.Drawing.Point(664, 375);
-            this.feveryeschckbox.Name = "feveryeschckbox";
-            this.feveryeschckbox.Size = new System.Drawing.Size(56, 22);
-            this.feveryeschckbox.TabIndex = 39;
-            this.feveryeschckbox.Text = "YES";
-            this.feveryeschckbox.UseVisualStyleBackColor = false;
-            this.feveryeschckbox.CheckedChanged += new System.EventHandler(this.feveryeschckbox_CheckedChanged);
-            // 
-            // lossoftastenochckbox
-            // 
-            this.lossoftastenochckbox.AutoSize = true;
-            this.lossoftastenochckbox.BackColor = System.Drawing.Color.Transparent;
-            this.lossoftastenochckbox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lossoftastenochckbox.Location = new System.Drawing.Point(726, 405);
-            this.lossoftastenochckbox.Name = "lossoftastenochckbox";
-            this.lossoftastenochckbox.Size = new System.Drawing.Size(51, 22);
-            this.lossoftastenochckbox.TabIndex = 42;
-            this.lossoftastenochckbox.Text = "NO";
-            this.lossoftastenochckbox.UseVisualStyleBackColor = false;
-            this.lossoftastenochckbox.CheckedChanged += new System.EventHandler(this.lossoftastenochckbox_CheckedChanged);
-            // 
-            // lossoftasteyeschckbox
-            // 
-            this.lossoftasteyeschckbox.AutoSize = true;
-            this.lossoftasteyeschckbox.BackColor = System.Drawing.Color.Transparent;
-            this.lossoftasteyeschckbox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lossoftasteyeschckbox.Location = new System.Drawing.Point(664, 405);
-            this.lossoftasteyeschckbox.Name = "lossoftasteyeschckbox";
-            this.lossoftasteyeschckbox.Size = new System.Drawing.Size(56, 22);
-            this.lossoftasteyeschckbox.TabIndex = 41;
-            this.lossoftasteyeschckbox.Text = "YES";
-            this.lossoftasteyeschckbox.UseVisualStyleBackColor = false;
-            this.lossoftasteyeschckbox.CheckedChanged += new System.EventHandler(this.lossoftasteyeschckbox_CheckedChanged);
-            // 
-            // lossofsmellnochckbox
-            // 
-            this.lossofsmellnochckbox.AutoSize = true;
-            this.lossofsmellnochckbox.BackColor = System.Drawing.Color.Transparent;
-            this.lossofsmellnochckbox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lossofsmellnochckbox.Location = new System.Drawing.Point(726, 434);
-            this.lossofsmellnochckbox.Name = "lossofsmellnochckbox";
-            this.lossofsmellnochckbox.Size = new System.Drawing.Size(51, 22);
-            this.lossofsmellnochckbox.TabIndex = 44;
-            this.lossofsmellnochckbox.Text = "NO";
-            this.lossofsmellnochckbox.UseVisualStyleBackColor = false;
-            this.lossofsmellnochckbox.CheckedChanged += new System.EventHandler(this.lossofsmellnochckbox_CheckedChanged);
-            // 
-            // lossofsmellyeschckbox
-            // 
-            this.lossofsmellyeschckbox.AutoSize = true;
-            this.lossofsmellyeschckbox.BackColor = System.Drawing.Color.Transparent;
-            this.lossofsmellyeschckbox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lossofsmellyeschckbox.Location = new System.Drawing.Point(664, 434);
-            this.lossofsmellyeschckbox.Name = "lossofsmellyeschckbox";
-            this.lossofsmellyeschckbox.Size = new System.Drawing.Size(56, 22);
-            this.lossofsmellyeschckbox.TabIndex = 43;
-            this.lossofsmellyeschckbox.Text = "YES";
-            this.lossofsmellyeschckbox.UseVisualStyleBackColor = false;
-            this.lossofsmellyeschckbox.CheckedChanged += new System.EventHandler(this.lossofsmellyeschckbox_CheckedChanged);
             // 
             // submitbtn
             // 
@@ -526,31 +408,215 @@
             this.label2.TabIndex = 50;
             this.label2.Text = " who\'s tested positive?";
             // 
-            // testpostnochckbox
+            // rdbtnyesfrstdose
             // 
-            this.testpostnochckbox.AutoSize = true;
-            this.testpostnochckbox.BackColor = System.Drawing.Color.Transparent;
-            this.testpostnochckbox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.testpostnochckbox.Location = new System.Drawing.Point(401, 419);
-            this.testpostnochckbox.Name = "testpostnochckbox";
-            this.testpostnochckbox.Size = new System.Drawing.Size(51, 22);
-            this.testpostnochckbox.TabIndex = 52;
-            this.testpostnochckbox.Text = "NO";
-            this.testpostnochckbox.UseVisualStyleBackColor = false;
-            this.testpostnochckbox.CheckedChanged += new System.EventHandler(this.testpostnochckbox_CheckedChanged);
+            this.rdbtnyesfrstdose.AutoSize = true;
+            this.rdbtnyesfrstdose.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnyesfrstdose.Location = new System.Drawing.Point(32, 9);
+            this.rdbtnyesfrstdose.Name = "rdbtnyesfrstdose";
+            this.rdbtnyesfrstdose.Size = new System.Drawing.Size(55, 22);
+            this.rdbtnyesfrstdose.TabIndex = 53;
+            this.rdbtnyesfrstdose.TabStop = true;
+            this.rdbtnyesfrstdose.Text = "YES";
+            this.rdbtnyesfrstdose.UseVisualStyleBackColor = true;
             // 
-            // testpostyeschckbox
+            // grpboxfirstdose
             // 
-            this.testpostyeschckbox.AutoSize = true;
-            this.testpostyeschckbox.BackColor = System.Drawing.Color.Transparent;
-            this.testpostyeschckbox.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.testpostyeschckbox.Location = new System.Drawing.Point(339, 419);
-            this.testpostyeschckbox.Name = "testpostyeschckbox";
-            this.testpostyeschckbox.Size = new System.Drawing.Size(56, 22);
-            this.testpostyeschckbox.TabIndex = 51;
-            this.testpostyeschckbox.Text = "YES";
-            this.testpostyeschckbox.UseVisualStyleBackColor = false;
-            this.testpostyeschckbox.CheckedChanged += new System.EventHandler(this.testpostyeschckbox_CheckedChanged);
+            this.grpboxfirstdose.BackColor = System.Drawing.Color.Transparent;
+            this.grpboxfirstdose.Controls.Add(this.rdbtnnofrstdose);
+            this.grpboxfirstdose.Controls.Add(this.rdbtnyesfrstdose);
+            this.grpboxfirstdose.Location = new System.Drawing.Point(82, 362);
+            this.grpboxfirstdose.Name = "grpboxfirstdose";
+            this.grpboxfirstdose.Size = new System.Drawing.Size(175, 31);
+            this.grpboxfirstdose.TabIndex = 54;
+            this.grpboxfirstdose.TabStop = false;
+            // 
+            // rdbtnnofrstdose
+            // 
+            this.rdbtnnofrstdose.AutoSize = true;
+            this.rdbtnnofrstdose.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnnofrstdose.Location = new System.Drawing.Point(94, 9);
+            this.rdbtnnofrstdose.Name = "rdbtnnofrstdose";
+            this.rdbtnnofrstdose.Size = new System.Drawing.Size(50, 22);
+            this.rdbtnnofrstdose.TabIndex = 54;
+            this.rdbtnnofrstdose.TabStop = true;
+            this.rdbtnnofrstdose.Text = "NO";
+            this.rdbtnnofrstdose.UseVisualStyleBackColor = true;
+            // 
+            // grpboxseconddose
+            // 
+            this.grpboxseconddose.BackColor = System.Drawing.Color.Transparent;
+            this.grpboxseconddose.Controls.Add(this.rdbtnnoscnddose);
+            this.grpboxseconddose.Controls.Add(this.rdbtnyesscnddose);
+            this.grpboxseconddose.Location = new System.Drawing.Point(82, 435);
+            this.grpboxseconddose.Name = "grpboxseconddose";
+            this.grpboxseconddose.Size = new System.Drawing.Size(175, 31);
+            this.grpboxseconddose.TabIndex = 55;
+            this.grpboxseconddose.TabStop = false;
+            // 
+            // rdbtnnoscnddose
+            // 
+            this.rdbtnnoscnddose.AutoSize = true;
+            this.rdbtnnoscnddose.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnnoscnddose.Location = new System.Drawing.Point(94, 9);
+            this.rdbtnnoscnddose.Name = "rdbtnnoscnddose";
+            this.rdbtnnoscnddose.Size = new System.Drawing.Size(50, 22);
+            this.rdbtnnoscnddose.TabIndex = 54;
+            this.rdbtnnoscnddose.TabStop = true;
+            this.rdbtnnoscnddose.Text = "NO";
+            this.rdbtnnoscnddose.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnyesscnddose
+            // 
+            this.rdbtnyesscnddose.AutoSize = true;
+            this.rdbtnyesscnddose.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnyesscnddose.Location = new System.Drawing.Point(32, 9);
+            this.rdbtnyesscnddose.Name = "rdbtnyesscnddose";
+            this.rdbtnyesscnddose.Size = new System.Drawing.Size(55, 22);
+            this.rdbtnyesscnddose.TabIndex = 53;
+            this.rdbtnyesscnddose.TabStop = true;
+            this.rdbtnyesscnddose.Text = "YES";
+            this.rdbtnyesscnddose.UseVisualStyleBackColor = true;
+            // 
+            // grpboxtestedpstv
+            // 
+            this.grpboxtestedpstv.BackColor = System.Drawing.Color.Transparent;
+            this.grpboxtestedpstv.Controls.Add(this.rdbtnnotstpstv);
+            this.grpboxtestedpstv.Controls.Add(this.rdbtnyeststpstv);
+            this.grpboxtestedpstv.Location = new System.Drawing.Point(309, 419);
+            this.grpboxtestedpstv.Name = "grpboxtestedpstv";
+            this.grpboxtestedpstv.Size = new System.Drawing.Size(189, 31);
+            this.grpboxtestedpstv.TabIndex = 55;
+            this.grpboxtestedpstv.TabStop = false;
+            // 
+            // rdbtnnotstpstv
+            // 
+            this.rdbtnnotstpstv.AutoSize = true;
+            this.rdbtnnotstpstv.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnnotstpstv.Location = new System.Drawing.Point(94, 9);
+            this.rdbtnnotstpstv.Name = "rdbtnnotstpstv";
+            this.rdbtnnotstpstv.Size = new System.Drawing.Size(50, 22);
+            this.rdbtnnotstpstv.TabIndex = 54;
+            this.rdbtnnotstpstv.TabStop = true;
+            this.rdbtnnotstpstv.Text = "NO";
+            this.rdbtnnotstpstv.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnyeststpstv
+            // 
+            this.rdbtnyeststpstv.AutoSize = true;
+            this.rdbtnyeststpstv.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnyeststpstv.Location = new System.Drawing.Point(32, 9);
+            this.rdbtnyeststpstv.Name = "rdbtnyeststpstv";
+            this.rdbtnyeststpstv.Size = new System.Drawing.Size(55, 22);
+            this.rdbtnyeststpstv.TabIndex = 53;
+            this.rdbtnyeststpstv.TabStop = true;
+            this.rdbtnyeststpstv.Text = "YES";
+            this.rdbtnyeststpstv.UseVisualStyleBackColor = true;
+            // 
+            // grpboxlossoftaste
+            // 
+            this.grpboxlossoftaste.BackColor = System.Drawing.Color.Transparent;
+            this.grpboxlossoftaste.Controls.Add(this.rdbtnnolossofsml);
+            this.grpboxlossoftaste.Controls.Add(this.rdbtnyeslossofsml);
+            this.grpboxlossoftaste.Location = new System.Drawing.Point(657, 398);
+            this.grpboxlossoftaste.Name = "grpboxlossoftaste";
+            this.grpboxlossoftaste.Size = new System.Drawing.Size(149, 31);
+            this.grpboxlossoftaste.TabIndex = 55;
+            this.grpboxlossoftaste.TabStop = false;
+            // 
+            // rdbtnnolossofsml
+            // 
+            this.rdbtnnolossofsml.AutoSize = true;
+            this.rdbtnnolossofsml.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnnolossofsml.Location = new System.Drawing.Point(68, 9);
+            this.rdbtnnolossofsml.Name = "rdbtnnolossofsml";
+            this.rdbtnnolossofsml.Size = new System.Drawing.Size(50, 22);
+            this.rdbtnnolossofsml.TabIndex = 54;
+            this.rdbtnnolossofsml.TabStop = true;
+            this.rdbtnnolossofsml.Text = "NO";
+            this.rdbtnnolossofsml.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnyeslossofsml
+            // 
+            this.rdbtnyeslossofsml.AutoSize = true;
+            this.rdbtnyeslossofsml.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnyeslossofsml.Location = new System.Drawing.Point(6, 10);
+            this.rdbtnyeslossofsml.Name = "rdbtnyeslossofsml";
+            this.rdbtnyeslossofsml.Size = new System.Drawing.Size(55, 22);
+            this.rdbtnyeslossofsml.TabIndex = 53;
+            this.rdbtnyeslossofsml.TabStop = true;
+            this.rdbtnyeslossofsml.Text = "YES";
+            this.rdbtnyeslossofsml.UseVisualStyleBackColor = true;
+            // 
+            // grpboxlossofsmell
+            // 
+            this.grpboxlossofsmell.BackColor = System.Drawing.Color.Transparent;
+            this.grpboxlossofsmell.Controls.Add(this.rdbtnnolossoftaste);
+            this.grpboxlossofsmell.Controls.Add(this.rdbtnyeslossoftaste);
+            this.grpboxlossofsmell.Location = new System.Drawing.Point(657, 428);
+            this.grpboxlossofsmell.Name = "grpboxlossofsmell";
+            this.grpboxlossofsmell.Size = new System.Drawing.Size(149, 31);
+            this.grpboxlossofsmell.TabIndex = 56;
+            this.grpboxlossofsmell.TabStop = false;
+            // 
+            // rdbtnnolossoftaste
+            // 
+            this.rdbtnnolossoftaste.AutoSize = true;
+            this.rdbtnnolossoftaste.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnnolossoftaste.Location = new System.Drawing.Point(68, 9);
+            this.rdbtnnolossoftaste.Name = "rdbtnnolossoftaste";
+            this.rdbtnnolossoftaste.Size = new System.Drawing.Size(50, 22);
+            this.rdbtnnolossoftaste.TabIndex = 54;
+            this.rdbtnnolossoftaste.TabStop = true;
+            this.rdbtnnolossoftaste.Text = "NO";
+            this.rdbtnnolossoftaste.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnyeslossoftaste
+            // 
+            this.rdbtnyeslossoftaste.AutoSize = true;
+            this.rdbtnyeslossoftaste.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnyeslossoftaste.Location = new System.Drawing.Point(7, 9);
+            this.rdbtnyeslossoftaste.Name = "rdbtnyeslossoftaste";
+            this.rdbtnyeslossoftaste.Size = new System.Drawing.Size(55, 22);
+            this.rdbtnyeslossoftaste.TabIndex = 53;
+            this.rdbtnyeslossoftaste.TabStop = true;
+            this.rdbtnyeslossoftaste.Text = "YES";
+            this.rdbtnyeslossoftaste.UseVisualStyleBackColor = true;
+            // 
+            // grpboxfever
+            // 
+            this.grpboxfever.BackColor = System.Drawing.Color.Transparent;
+            this.grpboxfever.Controls.Add(this.rdbtnnofever);
+            this.grpboxfever.Controls.Add(this.rdbtnyesfever);
+            this.grpboxfever.Location = new System.Drawing.Point(657, 371);
+            this.grpboxfever.Name = "grpboxfever";
+            this.grpboxfever.Size = new System.Drawing.Size(149, 31);
+            this.grpboxfever.TabIndex = 56;
+            this.grpboxfever.TabStop = false;
+            // 
+            // rdbtnnofever
+            // 
+            this.rdbtnnofever.AutoSize = true;
+            this.rdbtnnofever.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnnofever.Location = new System.Drawing.Point(68, 9);
+            this.rdbtnnofever.Name = "rdbtnnofever";
+            this.rdbtnnofever.Size = new System.Drawing.Size(50, 22);
+            this.rdbtnnofever.TabIndex = 54;
+            this.rdbtnnofever.TabStop = true;
+            this.rdbtnnofever.Text = "NO";
+            this.rdbtnnofever.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnyesfever
+            // 
+            this.rdbtnyesfever.AutoSize = true;
+            this.rdbtnyesfever.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.rdbtnyesfever.Location = new System.Drawing.Point(6, 9);
+            this.rdbtnyesfever.Name = "rdbtnyesfever";
+            this.rdbtnyesfever.Size = new System.Drawing.Size(55, 22);
+            this.rdbtnyesfever.TabIndex = 53;
+            this.rdbtnyesfever.TabStop = true;
+            this.rdbtnyesfever.Text = "YES";
+            this.rdbtnyesfever.UseVisualStyleBackColor = true;
             // 
             // ContactTracingAppScreeningInfo
             // 
@@ -561,28 +627,22 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 532);
-            this.Controls.Add(this.testpostnochckbox);
-            this.Controls.Add(this.testpostyeschckbox);
+            this.Controls.Add(this.grpboxfever);
+            this.Controls.Add(this.grpboxlossofsmell);
+            this.Controls.Add(this.grpboxlossoftaste);
+            this.Controls.Add(this.grpboxtestedpstv);
+            this.Controls.Add(this.grpboxseconddose);
+            this.Controls.Add(this.grpboxfirstdose);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.contposlbl1);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.clearbtn);
             this.Controls.Add(this.submitbtn);
-            this.Controls.Add(this.lossofsmellnochckbox);
-            this.Controls.Add(this.lossofsmellyeschckbox);
-            this.Controls.Add(this.lossoftastenochckbox);
-            this.Controls.Add(this.lossoftasteyeschckbox);
-            this.Controls.Add(this.fevernochckbox);
-            this.Controls.Add(this.feveryeschckbox);
             this.Controls.Add(this.feverlbl);
             this.Controls.Add(this.smelllbl);
             this.Controls.Add(this.tastelbl);
             this.Controls.Add(this.haveyouexprnlbl);
-            this.Controls.Add(this.seconddosenochckbx);
-            this.Controls.Add(this.firstdosenochckbx);
-            this.Controls.Add(this.seconddoseyeschckbx);
-            this.Controls.Add(this.firstdoseyeschckbx);
             this.Controls.Add(this.seconddoselbl);
             this.Controls.Add(this.firstdoselbl);
             this.Controls.Add(this.dayslbl);
@@ -609,6 +669,18 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CONTACT TRACING FORM";
             this.Load += new System.EventHandler(this.ContactTracingAppScreeningInfo_Load);
+            this.grpboxfirstdose.ResumeLayout(false);
+            this.grpboxfirstdose.PerformLayout();
+            this.grpboxseconddose.ResumeLayout(false);
+            this.grpboxseconddose.PerformLayout();
+            this.grpboxtestedpstv.ResumeLayout(false);
+            this.grpboxtestedpstv.PerformLayout();
+            this.grpboxlossoftaste.ResumeLayout(false);
+            this.grpboxlossoftaste.PerformLayout();
+            this.grpboxlossofsmell.ResumeLayout(false);
+            this.grpboxlossofsmell.PerformLayout();
+            this.grpboxfever.ResumeLayout(false);
+            this.grpboxfever.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -636,27 +708,33 @@
         private Label dayslbl;
         private Label firstdoselbl;
         private Label seconddoselbl;
-        private CheckBox firstdoseyeschckbx;
-        private CheckBox seconddoseyeschckbx;
-        private CheckBox firstdosenochckbx;
-        private CheckBox seconddosenochckbx;
         private Label haveyouexprnlbl;
         private Label smelllbl;
         private Label tastelbl;
         private Label feverlbl;
-        private CheckBox fevernochckbox;
-        private CheckBox feveryeschckbox;
-        private CheckBox lossoftastenochckbox;
-        private CheckBox lossoftasteyeschckbox;
-        private CheckBox lossofsmellnochckbox;
-        private CheckBox lossofsmellyeschckbox;
         private Button submitbtn;
         private Button clearbtn;
         private Button exitbtn;
         private Label contposlbl1;
         private Label label1;
         private Label label2;
-        private CheckBox testpostnochckbox;
-        private CheckBox testpostyeschckbox;
+        private RadioButton rdbtnyesfrstdose;
+        private GroupBox grpboxseconddose;
+        private RadioButton rdbtnnofrstdose;
+        private GroupBox grpboxfirstdose;
+        private RadioButton rdbtnnoscnddose;
+        private RadioButton rdbtnyesscnddose;
+        private GroupBox grpboxtestedpstv;
+        private RadioButton rdbtnnotstpstv;
+        private RadioButton rdbtnyeststpstv;
+        private GroupBox grpboxlossoftaste;
+        private RadioButton rdbtnnolossofsml;
+        private RadioButton rdbtnyeslossofsml;
+        private GroupBox grpboxlossofsmell;
+        private RadioButton rdbtnnolossoftaste;
+        private RadioButton rdbtnyeslossoftaste;
+        private GroupBox grpboxfever;
+        private RadioButton rdbtnnofever;
+        private RadioButton rdbtnyesfever;
     }
 }
