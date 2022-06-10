@@ -294,6 +294,7 @@
             this.firstdoseyeschckbx.TabIndex = 24;
             this.firstdoseyeschckbx.Text = "YES";
             this.firstdoseyeschckbx.UseVisualStyleBackColor = false;
+            this.firstdoseyeschckbx.CheckedChanged += new System.EventHandler(this.firstdoseyeschckbx_CheckedChanged);
             // 
             // seconddoseyeschckbx
             // 
@@ -306,6 +307,7 @@
             this.seconddoseyeschckbx.TabIndex = 25;
             this.seconddoseyeschckbx.Text = "YES";
             this.seconddoseyeschckbx.UseVisualStyleBackColor = false;
+            this.seconddoseyeschckbx.CheckedChanged += new System.EventHandler(this.seconddoseyeschckbx_CheckedChanged);
             // 
             // firstdosenochckbx
             // 
@@ -318,6 +320,7 @@
             this.firstdosenochckbx.TabIndex = 26;
             this.firstdosenochckbx.Text = "NO";
             this.firstdosenochckbx.UseVisualStyleBackColor = false;
+            this.firstdosenochckbx.CheckedChanged += new System.EventHandler(this.firstdosenochckbx_CheckedChanged);
             // 
             // seconddosenochckbx
             // 
@@ -330,6 +333,7 @@
             this.seconddosenochckbx.TabIndex = 27;
             this.seconddosenochckbx.Text = "NO";
             this.seconddosenochckbx.UseVisualStyleBackColor = false;
+            this.seconddosenochckbx.CheckedChanged += new System.EventHandler(this.seconddosenochckbx_CheckedChanged);
             // 
             // haveyouexprnlbl
             // 
@@ -386,6 +390,7 @@
             this.fevernochckbox.TabIndex = 40;
             this.fevernochckbox.Text = "NO";
             this.fevernochckbox.UseVisualStyleBackColor = false;
+            this.fevernochckbox.CheckedChanged += new System.EventHandler(this.fevernochckbox_CheckedChanged);
             // 
             // feveryeschckbox
             // 
@@ -398,6 +403,7 @@
             this.feveryeschckbox.TabIndex = 39;
             this.feveryeschckbox.Text = "YES";
             this.feveryeschckbox.UseVisualStyleBackColor = false;
+            this.feveryeschckbox.CheckedChanged += new System.EventHandler(this.feveryeschckbox_CheckedChanged);
             // 
             // lossoftastenochckbox
             // 
@@ -527,6 +533,7 @@
             this.testpostnochckbox.TabIndex = 52;
             this.testpostnochckbox.Text = "NO";
             this.testpostnochckbox.UseVisualStyleBackColor = false;
+            this.testpostnochckbox.CheckedChanged += new System.EventHandler(this.testpostnochckbox_CheckedChanged);
             // 
             // testpostyeschckbox
             // 
@@ -539,6 +546,7 @@
             this.testpostyeschckbox.TabIndex = 51;
             this.testpostyeschckbox.Text = "YES";
             this.testpostyeschckbox.UseVisualStyleBackColor = false;
+            this.testpostyeschckbox.CheckedChanged += new System.EventHandler(this.testpostyeschckbox_CheckedChanged);
             // 
             // ContactTracingAppScreeningInfo
             // 

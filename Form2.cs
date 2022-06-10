@@ -115,6 +115,44 @@ namespace Contact_Tracing_App
 
         }
 
+        private void firstdoseyeschckbx_CheckedChanged(object sender, EventArgs e)
+        {
+            this.firstdosenochckbx.Enabled = !firstdoseyeschckbx.Checked;
+        }
 
+        private void firstdosenochckbx_CheckedChanged(object sender, EventArgs e)
+        {
+            this.firstdoseyeschckbx.Enabled = !firstdosenochckbx.Checked;
+        }
+
+        private void seconddoseyeschckbx_CheckedChanged(object sender, EventArgs e)
+        {
+            this.seconddosenochckbx.Enabled = !seconddoseyeschckbx.Checked;
+        }
+
+        private void seconddosenochckbx_CheckedChanged(object sender, EventArgs e)
+        {
+            this.seconddoseyeschckbx.Enabled = !seconddosenochckbx.Checked;
+        }
+
+        private void testpostyeschckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.testpostnochckbox.Enabled = !testpostyeschckbox.Checked;
+        }
+
+        private void testpostnochckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.testpostyeschckbox.Enabled = !testpostnochckbox.Checked;
+        }
+
+        private void feveryeschckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.fevernochckbox.Enabled = !feveryeschckbox.Checked;
+        }
+
+        private void fevernochckbox_CheckedChanged(object sender, EventArgs e)
+        {
+            this.feveryeschckbox.Enabled = !fevernochckbox.Checked;
+        }
     }
 }
