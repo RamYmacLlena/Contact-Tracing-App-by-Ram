@@ -41,14 +41,48 @@ namespace Contact_Tracing_App
             file.WriteLine("Age : " + agetxtbox.Text);
             file.WriteLine("Sex : " + sextxtbox.Text);
             file.WriteLine("Temperature : " + temperaturetxtbox.Text);
-            file.WriteLine("First Dose : " + yescheckbox1.Text);
-            file.WriteLine("First Dose : " + nocheckbox1.Text);
-            file.WriteLine("Second Dose : " + yescheckbox2.Text);
-            file.WriteLine("Second Dose : " + nocheckbox2.Text);
-
+            file.WriteLine("First Dose : " + firstdoseyeschckbx.Text);
+            file.WriteLine("First Dose : " + firstdosenochckbx.Text);
+            file.WriteLine("Second Dose : " + seconddoseyeschckbx.Text);
+            file.WriteLine("Second Dose : " + seconddosenochckbx.Text);
+            file.WriteLine("Have had contact with someone who tested postive? " + testpostyeschckbox.Text);
+            file.WriteLine("Have had contact with someone who tested postive? " + testpostnochckbox.Text);
+            file.WriteLine(haveyouexprnlbl.Text + " ");
+            file.WriteLine("1. Fever? " + feveryeschckbox);
+            file.WriteLine("1. Fever? " + fevernochckbox);
+            file.WriteLine("2. Loss of Taste? " + lossoftasteyeschckbox);
+            file.WriteLine("2. Loss of Taste? " + lossoftastenochckbox);
+            file.WriteLine("3. Loss of Smell? " + lossofsmellyeschckbox);
+            file.WriteLine("3. Loss of Smell? " + lossofsmellnochckbox);
             file.Close();
         }
 
+
+        private void clearbtn_Click(object sender, EventArgs e)
+        {
+            nametxtbox.Text = ("");
+            addresstxtbox.Text = ("");
+            contactnotxtbox.Text = ("");
+            agetxtbox.Text = ("");
+            sextxtbox.Text = ("");
+            temperaturetxtbox.Text = ("");
+            firstdoseyeschckbx.Checked = false;
+            firstdosenochckbx.Checked = false;
+            seconddoseyeschckbx.Checked = false;
+            seconddosenochckbx.Checked = false;
+            testpostyeschckbox.Checked = false;
+            testpostnochckbox.Checked = false;
+            feveryeschckbox.Checked = false;
+            fevernochckbox.Checked = false;
+            lossoftasteyeschckbox.Checked = false;
+            lossoftastenochckbox.Checked = false;
+            lossofsmellyeschckbox.Checked = false;
+            lossofsmellnochckbox.Checked = false;
+        }
+        private void exitbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
         private void firstdoselbl_Click(object sender, EventArgs e)
         {
 
@@ -58,5 +92,7 @@ namespace Contact_Tracing_App
         {
 
         }
+
+
     }
 }
