@@ -131,11 +131,17 @@ namespace Contact_Tracing_App
                         file.WriteLine("2. Loss of Taste? " + LossofTasteAnswer);
                         file.WriteLine("3. Loss of Smell? " + LossofSmellAnswer);
                         file.Close();
-                    }
-            
+            }
+            {
+                MessageBox.Show("Registration Successful!");
+            }
+            ContactTracingAppScreeningInfo NewForm = new ContactTracingAppScreeningInfo();
+            NewForm.Show();
+            this.Dispose(false);
+
         }
-        
-        
+
+
 
         private void clearbtn_Click(object sender, EventArgs e)
         {
