@@ -32,31 +32,53 @@ namespace Contact_Tracing_App
 
         }
 
+
         private void submitbtn_Click(object sender, EventArgs e)
         {
-            StreamWriter file = File.AppendText("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing App Infos\\Contact Tracing Information.txt");
-            file.WriteLine("Name : " + nametxtbox.Text);
-            file.WriteLine("Address : " + addresstxtbox.Text);
-            file.WriteLine("Contact Number: " + contactnotxtbox.Text);
-            file.WriteLine("Age : " + agetxtbox.Text);
-            file.WriteLine("Sex : " + sextxtbox.Text);
-            file.WriteLine("Temperature : " + temperaturetxtbox.Text);
-            file.WriteLine("First Dose : " + firstdoseyeschckbx.Text);
-            file.WriteLine("First Dose : " + firstdosenochckbx.Text);
-            file.WriteLine("Second Dose : " + seconddoseyeschckbx.Text);
-            file.WriteLine("Second Dose : " + seconddosenochckbx.Text);
-            file.WriteLine("Have had contact with someone who tested postive? " + testpostyeschckbox.Text);
-            file.WriteLine("Have had contact with someone who tested postive? " + testpostnochckbox.Text);
-            file.WriteLine(haveyouexprnlbl.Text + " ");
-            file.WriteLine("1. Fever? " + feveryeschckbox);
-            file.WriteLine("1. Fever? " + fevernochckbox);
-            file.WriteLine("2. Loss of Taste? " + lossoftasteyeschckbox);
-            file.WriteLine("2. Loss of Taste? " + lossoftastenochckbox);
-            file.WriteLine("3. Loss of Smell? " + lossofsmellyeschckbox);
-            file.WriteLine("3. Loss of Smell? " + lossofsmellnochckbox);
-            file.Close();
+            if ((nametxtbox.Text == "") ||
+                 (addresstxtbox.Text == "") ||
+                 (contactnotxtbox.Text == "") ||
+                 (agetxtbox.Text == "") ||
+                 (sextxtbox.Text == "") ||
+                 (temperaturetxtbox.Text == "") ||
+                 ((!firstdoseyeschckbx.Checked) && (!firstdosenochckbx.Checked)) ||
+                 ((!seconddoseyeschckbx.Checked) && (!seconddosenochckbx.Checked)) ||
+                 ((!testpostyeschckbox.Checked) && (!testpostnochckbox.Checked)) ||
+                 ((!feveryeschckbox.Checked) && (!fevernochckbox.Checked)) ||
+                 ((!lossoftasteyeschckbox.Checked) && (!lossoftastenochckbox.Checked)) ||
+                 ((!lossofsmellyeschckbox.Checked) && (!lossofsmellnochckbox.Checked))
+                )
+            {
+                MessageBox.Show("Please answer the blank sections!");
+            }
+            else
+                    {
+                        StreamWriter file = File.AppendText("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing App Infos\\Contact Tracing Information.txt");
+                        file.WriteLine("Name : " + nametxtbox.Text);
+                        file.WriteLine("Address : " + addresstxtbox.Text);
+                        file.WriteLine("Contact Number: " + contactnotxtbox.Text);
+                        file.WriteLine("Age : " + agetxtbox.Text);
+                        file.WriteLine("Sex : " + sextxtbox.Text);
+                        file.WriteLine("Temperature : " + temperaturetxtbox.Text);
+                        file.WriteLine("First Dose : " + firstdoseyeschckbx.Text);
+                        file.WriteLine("First Dose : " + firstdosenochckbx.Text);
+                        file.WriteLine("Second Dose : " + seconddoseyeschckbx.Text);
+                        file.WriteLine("Second Dose : " + seconddosenochckbx.Text);
+                        file.WriteLine("Have had contact with someone who tested postive? " + testpostyeschckbox.Text);
+                        file.WriteLine("Have had contact with someone who tested postive? " + testpostnochckbox.Text);
+                        file.WriteLine(haveyouexprnlbl.Text + " ");
+                        file.WriteLine("1. Fever? " + feveryeschckbox);
+                        file.WriteLine("1. Fever? " + fevernochckbox);
+                        file.WriteLine("2. Loss of Taste? " + lossoftasteyeschckbox);
+                        file.WriteLine("2. Loss of Taste? " + lossoftastenochckbox);
+                        file.WriteLine("3. Loss of Smell? " + lossofsmellyeschckbox);
+                        file.WriteLine("3. Loss of Smell? " + lossofsmellnochckbox);
+                        file.Close();
+                    }
+            
         }
-
+        
+        
 
         private void clearbtn_Click(object sender, EventArgs e)
         {
