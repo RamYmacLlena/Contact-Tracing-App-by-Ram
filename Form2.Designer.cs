@@ -49,10 +49,6 @@
             this.dayslbl = new System.Windows.Forms.Label();
             this.firstdoselbl = new System.Windows.Forms.Label();
             this.seconddoselbl = new System.Windows.Forms.Label();
-            this.vaccinebrandtxtbox1 = new System.Windows.Forms.TextBox();
-            this.vaccinebrandtxtbox2 = new System.Windows.Forms.TextBox();
-            this.vaccinebrandlbl1 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
             this.yescheckbox1 = new System.Windows.Forms.CheckBox();
             this.yescheckbox2 = new System.Windows.Forms.CheckBox();
             this.nocheckbox1 = new System.Windows.Forms.CheckBox();
@@ -77,6 +73,11 @@
             this.submitbtn = new System.Windows.Forms.Button();
             this.clearbtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
+            this.contposlbl1 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
+            this.checkBox2 = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // titilelbl
@@ -250,7 +251,7 @@
             this.healthhistorylbl.AutoSize = true;
             this.healthhistorylbl.BackColor = System.Drawing.Color.Transparent;
             this.healthhistorylbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.healthhistorylbl.Location = new System.Drawing.Point(528, 287);
+            this.healthhistorylbl.Location = new System.Drawing.Point(466, 287);
             this.healthhistorylbl.Name = "healthhistorylbl";
             this.healthhistorylbl.Size = new System.Drawing.Size(161, 23);
             this.healthhistorylbl.TabIndex = 16;
@@ -261,7 +262,7 @@
             this.dayslbl.AutoSize = true;
             this.dayslbl.BackColor = System.Drawing.Color.Transparent;
             this.dayslbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.dayslbl.Location = new System.Drawing.Point(527, 310);
+            this.dayslbl.Location = new System.Drawing.Point(465, 310);
             this.dayslbl.Name = "dayslbl";
             this.dayslbl.Size = new System.Drawing.Size(162, 23);
             this.dayslbl.TabIndex = 17;
@@ -288,47 +289,6 @@
             this.seconddoselbl.Size = new System.Drawing.Size(136, 23);
             this.seconddoselbl.TabIndex = 19;
             this.seconddoselbl.Text = "SECOND DOSE?";
-            // 
-            // vaccinebrandtxtbox1
-            // 
-            this.vaccinebrandtxtbox1.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.vaccinebrandtxtbox1.Location = new System.Drawing.Point(310, 331);
-            this.vaccinebrandtxtbox1.Multiline = true;
-            this.vaccinebrandtxtbox1.Name = "vaccinebrandtxtbox1";
-            this.vaccinebrandtxtbox1.Size = new System.Drawing.Size(122, 29);
-            this.vaccinebrandtxtbox1.TabIndex = 20;
-            this.vaccinebrandtxtbox1.TextChanged += new System.EventHandler(this.vaccinebrandtxtbox1_TextChanged);
-            // 
-            // vaccinebrandtxtbox2
-            // 
-            this.vaccinebrandtxtbox2.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.vaccinebrandtxtbox2.Location = new System.Drawing.Point(310, 390);
-            this.vaccinebrandtxtbox2.Multiline = true;
-            this.vaccinebrandtxtbox2.Name = "vaccinebrandtxtbox2";
-            this.vaccinebrandtxtbox2.Size = new System.Drawing.Size(122, 29);
-            this.vaccinebrandtxtbox2.TabIndex = 21;
-            // 
-            // vaccinebrandlbl1
-            // 
-            this.vaccinebrandlbl1.AutoSize = true;
-            this.vaccinebrandlbl1.BackColor = System.Drawing.Color.Transparent;
-            this.vaccinebrandlbl1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.vaccinebrandlbl1.Location = new System.Drawing.Point(310, 317);
-            this.vaccinebrandlbl1.Name = "vaccinebrandlbl1";
-            this.vaccinebrandlbl1.Size = new System.Drawing.Size(130, 18);
-            this.vaccinebrandlbl1.TabIndex = 22;
-            this.vaccinebrandlbl1.Text = "VACCINE BRAND :";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(310, 373);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(130, 18);
-            this.label1.TabIndex = 23;
-            this.label1.Text = "VACCINE BRAND :";
             // 
             // yescheckbox1
             // 
@@ -591,23 +551,80 @@
             // 
             this.clearbtn.BackColor = System.Drawing.Color.Aqua;
             this.clearbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clearbtn.Location = new System.Drawing.Point(107, 482);
+            this.clearbtn.Location = new System.Drawing.Point(105, 482);
             this.clearbtn.Name = "clearbtn";
-            this.clearbtn.Size = new System.Drawing.Size(123, 39);
+            this.clearbtn.Size = new System.Drawing.Size(144, 39);
             this.clearbtn.TabIndex = 46;
-            this.clearbtn.Text = "CLEAR";
+            this.clearbtn.Text = "CLEAR ALL";
             this.clearbtn.UseVisualStyleBackColor = false;
             // 
             // exitbtn
             // 
             this.exitbtn.BackColor = System.Drawing.Color.Aqua;
             this.exitbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exitbtn.Location = new System.Drawing.Point(566, 481);
+            this.exitbtn.Location = new System.Drawing.Point(560, 482);
             this.exitbtn.Name = "exitbtn";
             this.exitbtn.Size = new System.Drawing.Size(123, 39);
             this.exitbtn.TabIndex = 47;
             this.exitbtn.Text = "EXIT";
             this.exitbtn.UseVisualStyleBackColor = false;
+            // 
+            // contposlbl1
+            // 
+            this.contposlbl1.AutoSize = true;
+            this.contposlbl1.BackColor = System.Drawing.Color.Transparent;
+            this.contposlbl1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.contposlbl1.Location = new System.Drawing.Point(320, 344);
+            this.contposlbl1.Name = "contposlbl1";
+            this.contposlbl1.Size = new System.Drawing.Size(189, 18);
+            this.contposlbl1.TabIndex = 48;
+            this.contposlbl1.Text = "have you had contact ";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label1.Location = new System.Drawing.Point(350, 362);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(124, 18);
+            this.label1.TabIndex = 49;
+            this.label1.Text = "with someone";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label2.Location = new System.Drawing.Point(314, 380);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(197, 18);
+            this.label2.TabIndex = 50;
+            this.label2.Text = " who\'s tested positive?";
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox1.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBox1.Location = new System.Drawing.Point(412, 401);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(51, 22);
+            this.checkBox1.TabIndex = 52;
+            this.checkBox1.Text = "NO";
+            this.checkBox1.UseVisualStyleBackColor = false;
+            // 
+            // checkBox2
+            // 
+            this.checkBox2.AutoSize = true;
+            this.checkBox2.BackColor = System.Drawing.Color.Transparent;
+            this.checkBox2.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.checkBox2.Location = new System.Drawing.Point(350, 401);
+            this.checkBox2.Name = "checkBox2";
+            this.checkBox2.Size = new System.Drawing.Size(56, 22);
+            this.checkBox2.TabIndex = 51;
+            this.checkBox2.Text = "YES";
+            this.checkBox2.UseVisualStyleBackColor = false;
             // 
             // ContactTracingAppScreeningInfo
             // 
@@ -618,6 +635,11 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 532);
+            this.Controls.Add(this.checkBox1);
+            this.Controls.Add(this.checkBox2);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.contposlbl1);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.clearbtn);
             this.Controls.Add(this.submitbtn);
@@ -642,10 +664,6 @@
             this.Controls.Add(this.nocheckbox1);
             this.Controls.Add(this.yescheckbox2);
             this.Controls.Add(this.yescheckbox1);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.vaccinebrandlbl1);
-            this.Controls.Add(this.vaccinebrandtxtbox2);
-            this.Controls.Add(this.vaccinebrandtxtbox1);
             this.Controls.Add(this.seconddoselbl);
             this.Controls.Add(this.firstdoselbl);
             this.Controls.Add(this.dayslbl);
@@ -666,6 +684,7 @@
             this.Controls.Add(this.agelbl);
             this.Controls.Add(this.namelbl);
             this.Controls.Add(this.titilelbl);
+            this.DoubleBuffered = true;
             this.HelpButton = true;
             this.Name = "ContactTracingAppScreeningInfo";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
@@ -697,10 +716,6 @@
         private Label dayslbl;
         private Label firstdoselbl;
         private Label seconddoselbl;
-        private TextBox vaccinebrandtxtbox1;
-        private TextBox vaccinebrandtxtbox2;
-        private Label vaccinebrandlbl1;
-        private Label label1;
         private CheckBox yescheckbox1;
         private CheckBox yescheckbox2;
         private CheckBox nocheckbox1;
@@ -725,5 +740,10 @@
         private Button submitbtn;
         private Button clearbtn;
         private Button exitbtn;
+        private Label contposlbl1;
+        private Label label1;
+        private Label label2;
+        private CheckBox checkBox1;
+        private CheckBox checkBox2;
     }
 }
