@@ -177,5 +177,10 @@ namespace Contact_Tracing_App
         {
 
         }
+
+        private void MonthListBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
