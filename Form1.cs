@@ -17,5 +17,11 @@ namespace Contact_Tracing_App
         {
             this.Close();
         }
+
+        private void SeeDataRecodsbtn_Click(object sender, EventArgs e)
+        {
+            RecordsForm form = new RecordsForm();
+            form.Show();
+        }
     }
 }

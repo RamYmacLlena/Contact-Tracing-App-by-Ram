@@ -33,6 +33,7 @@
             this.personalinfolbl = new System.Windows.Forms.Label();
             this.startbtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
+            this.SeeDataRecodsbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             // 
             this.startbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.startbtn.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.startbtn.Location = new System.Drawing.Point(102, 306);
+            this.startbtn.Location = new System.Drawing.Point(102, 289);
             this.startbtn.Name = "startbtn";
             this.startbtn.Size = new System.Drawing.Size(173, 63);
             this.startbtn.TabIndex = 2;
@@ -77,7 +78,7 @@
             // 
             this.exitbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.exitbtn.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exitbtn.Location = new System.Drawing.Point(121, 395);
+            this.exitbtn.Location = new System.Drawing.Point(123, 427);
             this.exitbtn.Name = "exitbtn";
             this.exitbtn.Size = new System.Drawing.Size(132, 55);
             this.exitbtn.TabIndex = 3;
@@ -85,12 +86,25 @@
             this.exitbtn.UseVisualStyleBackColor = false;
             this.exitbtn.Click += new System.EventHandler(this.exitbtn_Click);
             // 
+            // SeeDataRecodsbtn
+            // 
+            this.SeeDataRecodsbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.SeeDataRecodsbtn.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SeeDataRecodsbtn.Location = new System.Drawing.Point(114, 358);
+            this.SeeDataRecodsbtn.Name = "SeeDataRecodsbtn";
+            this.SeeDataRecodsbtn.Size = new System.Drawing.Size(149, 63);
+            this.SeeDataRecodsbtn.TabIndex = 4;
+            this.SeeDataRecodsbtn.Text = "SEE DATA RECORDS";
+            this.SeeDataRecodsbtn.UseVisualStyleBackColor = false;
+            this.SeeDataRecodsbtn.Click += new System.EventHandler(this.SeeDataRecodsbtn_Click);
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(380, 496);
+            this.Controls.Add(this.SeeDataRecodsbtn);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.startbtn);
             this.Controls.Add(this.personalinfolbl);
@@ -109,5 +123,6 @@
         private Label personalinfolbl;
         private Button startbtn;
         private Button exitbtn;
+        private Button SeeDataRecodsbtn;
     }
 }

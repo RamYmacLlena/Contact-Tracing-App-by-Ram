@@ -77,9 +77,7 @@
             this.grpboxfever = new System.Windows.Forms.GroupBox();
             this.rdbtnnofever = new System.Windows.Forms.RadioButton();
             this.rdbtnyesfever = new System.Windows.Forms.RadioButton();
-            this.MonthListBox = new System.Windows.Forms.ListBox();
-            this.YearListBox = new System.Windows.Forms.ListBox();
-            this.DateLabel = new System.Windows.Forms.Label();
+            this.DTpicker = new System.Windows.Forms.DateTimePicker();
             this.grpboxfirstdose.SuspendLayout();
             this.grpboxseconddose.SuspendLayout();
             this.grpboxtestedpstv.SuspendLayout();
@@ -621,63 +619,13 @@
             this.rdbtnyesfever.Text = "YES";
             this.rdbtnyesfever.UseVisualStyleBackColor = true;
             // 
-            // MonthListBox
+            // DTpicker
             // 
-            this.MonthListBox.ColumnWidth = 5;
-            this.MonthListBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MonthListBox.FormattingEnabled = true;
-            this.MonthListBox.ItemHeight = 19;
-            this.MonthListBox.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.MonthListBox.Location = new System.Drawing.Point(580, 78);
-            this.MonthListBox.Name = "MonthListBox";
-            this.MonthListBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.MonthListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.MonthListBox.Size = new System.Drawing.Size(109, 23);
-            this.MonthListBox.TabIndex = 57;
-            this.MonthListBox.Tag = "";
-            this.MonthListBox.SelectedIndexChanged += new System.EventHandler(this.MonthListBox_SelectedIndexChanged);
-            // 
-            // YearListBox
-            // 
-            this.YearListBox.ColumnWidth = 5;
-            this.YearListBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.YearListBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.YearListBox.FormattingEnabled = true;
-            this.YearListBox.ItemHeight = 19;
-            this.YearListBox.Items.AddRange(new object[] {
-            "2020",
-            "2021",
-            "2022"});
-            this.YearListBox.Location = new System.Drawing.Point(695, 78);
-            this.YearListBox.Name = "YearListBox";
-            this.YearListBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.YearListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.YearListBox.Size = new System.Drawing.Size(68, 23);
-            this.YearListBox.TabIndex = 58;
-            this.YearListBox.Tag = "";
-            // 
-            // DateLabel
-            // 
-            this.DateLabel.AutoSize = true;
-            this.DateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.DateLabel.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DateLabel.Location = new System.Drawing.Point(509, 78);
-            this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(65, 23);
-            this.DateLabel.TabIndex = 59;
-            this.DateLabel.Text = "DATE :";
+            this.DTpicker.CalendarFont = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DTpicker.Location = new System.Drawing.Point(513, 73);
+            this.DTpicker.Name = "DTpicker";
+            this.DTpicker.Size = new System.Drawing.Size(250, 27);
+            this.DTpicker.TabIndex = 60;
             // 
             // ContactTracingAppScreeningInfo
             // 
@@ -688,9 +636,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 532);
-            this.Controls.Add(this.DateLabel);
-            this.Controls.Add(this.YearListBox);
-            this.Controls.Add(this.MonthListBox);
+            this.Controls.Add(this.DTpicker);
             this.Controls.Add(this.grpboxfever);
             this.Controls.Add(this.grpboxlossofsmell);
             this.Controls.Add(this.grpboxlossoftaste);
@@ -800,8 +746,6 @@
         private GroupBox grpboxfever;
         private RadioButton rdbtnnofever;
         private RadioButton rdbtnyesfever;
-        private ListBox MonthListBox;
-        private ListBox YearListBox;
-        private Label DateLabel;
+        private DateTimePicker DTpicker;
     }
 }
