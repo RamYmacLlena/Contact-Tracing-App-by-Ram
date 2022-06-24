@@ -31,21 +31,44 @@ namespace Contact_Tracing_App
             DataTable dt = new DataTable();
             dt.Columns.AddRange(new DataColumn[]
             {
-                new DataColumn("UUID", typeof(string))
-            }); 
+                new DataColumn("UUID", typeof(string)),
+                new DataColumn("Name", typeof(string)),
+                new DataColumn("Address", typeof(string)),
+                new DataColumn("Contact Number", typeof(string)),
+                new DataColumn("Age", typeof(string)),
+                new DataColumn("Sex", typeof(string)),
+                new DataColumn("Temperature", typeof(string)),
+                new DataColumn("First Dose", typeof(string)),
+                new DataColumn("Second Dose", typeof(string)),
+                new DataColumn("Have had contact with someone who tested postive", typeof(string)),
+                new DataColumn("Fever", typeof(string)),
+                new DataColumn("Loss of Taste", typeof(string)),
+                new DataColumn("Loss of Smell", typeof(string)),
+                new DataColumn("Date Track", typeof(string)),
+            }); ; 
             foreach (var row in list)
             {
-                var trace = new[]
+                var values = row.Split("),(");
+                var output = new List<string>();
+                for (int j = 0; j < values.Length; j++)
                 {
-                    row,
-                };
-                for (int j = 0; j < trace.Length; j++)
-                {
-                    var newRow = dt.NewRow();
-                    dt.Rows.Add(trace[j]);
+                    var data = values[j].Substring(values[j].IndexOf(",") + 1);
+                    values[j] = data;
                     
                 }
-                   
+                
+                dt.Rows.Add(values);
+                //var trace = new[]
+                //{
+                //    row,
+                //};
+                //for (int j = 0; j < trace.Length; j++)
+                //{
+                //   var newRow = dt.NewRow();
+                // dt.Rows.Add(trace[j]);
+
+                //}
+
                 //var values = row.Split(',');
                 //dt.Rows.Add(row);
             }
@@ -57,6 +80,8 @@ namespace Contact_Tracing_App
             //string details = string.Join(",", list);
             //label1.Text = dt[0].Item2;
             inputFile.Close();
+            //dataGridView1.Width = dataGridView1.Columns.Cast<DataGridViewColumn>().Sum(x => x.Width)
+            //    + (dataGridView1.RowHeadersVisible ? dataGridView1.RowHeadersWidth : 0) + 3;
         }
 
         private void label1_Click(object sender, EventArgs e)
