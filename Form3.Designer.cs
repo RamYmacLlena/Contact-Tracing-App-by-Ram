@@ -30,29 +30,30 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecordsForm));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
+            this.PersonalDataRecords = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(255, 49);
+            this.dataGridView1.Location = new System.Drawing.Point(12, 49);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(300, 454);
+            this.dataGridView1.Size = new System.Drawing.Size(1382, 482);
             this.dataGridView1.TabIndex = 0;
             // 
-            // label1
+            // PersonalDataRecords
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(74, 49);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 20);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "label1";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
+            this.PersonalDataRecords.AutoSize = true;
+            this.PersonalDataRecords.BackColor = System.Drawing.Color.Transparent;
+            this.PersonalDataRecords.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.PersonalDataRecords.Location = new System.Drawing.Point(12, 9);
+            this.PersonalDataRecords.Name = "PersonalDataRecords";
+            this.PersonalDataRecords.Size = new System.Drawing.Size(283, 26);
+            this.PersonalDataRecords.TabIndex = 1;
+            this.PersonalDataRecords.Text = "Personal Data Records";
             // 
             // RecordsForm
             // 
@@ -62,8 +63,8 @@
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(758, 531);
-            this.Controls.Add(this.label1);
+            this.ClientSize = new System.Drawing.Size(1406, 543);
+            this.Controls.Add(this.PersonalDataRecords);
             this.Controls.Add(this.dataGridView1);
             this.DoubleBuffered = true;
             this.Name = "RecordsForm";
@@ -78,6 +79,6 @@
         #endregion
 
         private DataGridView dataGridView1;
-        private Label label1;
+        private Label PersonalDataRecords;
     }
 }

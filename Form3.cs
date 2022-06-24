@@ -83,14 +83,5 @@ namespace Contact_Tracing_App
             //dataGridView1.Width = dataGridView1.Columns.Cast<DataGridViewColumn>().Sum(x => x.Width)
             //    + (dataGridView1.RowHeadersVisible ? dataGridView1.RowHeadersWidth : 0) + 3;
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-            StreamReader inputFile = new StreamReader("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing App Infos\\Contact Tracing Information.txt");
-
-            label1.Text = inputFile.ReadToEnd();
-
-            inputFile.Close();
-        }
     }
 }
