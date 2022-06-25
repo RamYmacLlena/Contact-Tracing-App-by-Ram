@@ -92,7 +92,6 @@ namespace Contact_Tracing_App
                 dataGridView1[13, i].Value = date;
             }
             dtbl = (DataTable)dataGridView1.DataSource;
-            MessageBox.Show(dtbl.Rows[0][13].ToString());
         }
         private void RecordsForm_Load(object sender, EventArgs e)
         {

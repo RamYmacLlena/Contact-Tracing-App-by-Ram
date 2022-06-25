@@ -242,6 +242,7 @@
             this.temperaturetxtbox.Name = "temperaturetxtbox";
             this.temperaturetxtbox.Size = new System.Drawing.Size(106, 23);
             this.temperaturetxtbox.TabIndex = 14;
+            this.temperaturetxtbox.TextChanged += new System.EventHandler(this.temperaturetxtbox_TextChanged);
             // 
             // vaccineinfolbl
             // 

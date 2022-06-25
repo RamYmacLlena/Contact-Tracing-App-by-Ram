@@ -182,5 +182,10 @@ namespace Contact_Tracing_App
         {
 
         }
+
+        private void temperaturetxtbox_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
