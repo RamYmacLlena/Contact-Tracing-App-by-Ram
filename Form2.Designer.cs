@@ -78,6 +78,8 @@
             this.rdbtnnofever = new System.Windows.Forms.RadioButton();
             this.rdbtnyesfever = new System.Windows.Forms.RadioButton();
             this.DTpicker = new System.Windows.Forms.DateTimePicker();
+            this.Datelbl = new System.Windows.Forms.Label();
+            this.celsiuslbl = new System.Windows.Forms.Label();
             this.grpboxfirstdose.SuspendLayout();
             this.grpboxseconddose.SuspendLayout();
             this.grpboxtestedpstv.SuspendLayout();
@@ -225,17 +227,17 @@
             // 
             this.temperaturelbl.AutoSize = true;
             this.temperaturelbl.BackColor = System.Drawing.Color.Transparent;
-            this.temperaturelbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.temperaturelbl.Location = new System.Drawing.Point(504, 196);
+            this.temperaturelbl.Font = new System.Drawing.Font("Showcard Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.temperaturelbl.Location = new System.Drawing.Point(527, 196);
             this.temperaturelbl.Name = "temperaturelbl";
-            this.temperaturelbl.Size = new System.Drawing.Size(147, 23);
+            this.temperaturelbl.Size = new System.Drawing.Size(103, 17);
             this.temperaturelbl.TabIndex = 13;
-            this.temperaturelbl.Text = "TEMPERATURE :";
+            this.temperaturelbl.Text = "TEMPERATURE";
             // 
             // temperaturetxtbox
             // 
             this.temperaturetxtbox.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.temperaturetxtbox.Location = new System.Drawing.Point(657, 196);
+            this.temperaturetxtbox.Location = new System.Drawing.Point(657, 205);
             this.temperaturetxtbox.Multiline = true;
             this.temperaturetxtbox.Name = "temperaturetxtbox";
             this.temperaturetxtbox.Size = new System.Drawing.Size(106, 23);
@@ -622,10 +624,33 @@
             // DTpicker
             // 
             this.DTpicker.CalendarFont = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DTpicker.Location = new System.Drawing.Point(513, 73);
+            this.DTpicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DTpicker.Location = new System.Drawing.Point(639, 73);
             this.DTpicker.Name = "DTpicker";
-            this.DTpicker.Size = new System.Drawing.Size(250, 27);
+            this.DTpicker.Size = new System.Drawing.Size(124, 27);
             this.DTpicker.TabIndex = 60;
+            // 
+            // Datelbl
+            // 
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.BackColor = System.Drawing.Color.Transparent;
+            this.Datelbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Datelbl.Location = new System.Drawing.Point(574, 75);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(65, 23);
+            this.Datelbl.TabIndex = 61;
+            this.Datelbl.Text = "DATE :";
+            // 
+            // celsiuslbl
+            // 
+            this.celsiuslbl.AutoSize = true;
+            this.celsiuslbl.BackColor = System.Drawing.Color.Transparent;
+            this.celsiuslbl.Font = new System.Drawing.Font("Showcard Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.celsiuslbl.Location = new System.Drawing.Point(507, 213);
+            this.celsiuslbl.Name = "celsiuslbl";
+            this.celsiuslbl.Size = new System.Drawing.Size(145, 17);
+            this.celsiuslbl.TabIndex = 62;
+            this.celsiuslbl.Text = "(in degree celsius) :";
             // 
             // ContactTracingAppScreeningInfo
             // 
@@ -636,6 +661,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 532);
+            this.Controls.Add(this.celsiuslbl);
+            this.Controls.Add(this.Datelbl);
             this.Controls.Add(this.DTpicker);
             this.Controls.Add(this.grpboxfever);
             this.Controls.Add(this.grpboxlossofsmell);
@@ -747,5 +774,7 @@
         private RadioButton rdbtnnofever;
         private RadioButton rdbtnyesfever;
         private DateTimePicker DTpicker;
+        private Label Datelbl;
+        private Label celsiuslbl;
     }
 }
