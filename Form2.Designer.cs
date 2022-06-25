@@ -77,9 +77,9 @@
             this.grpboxfever = new System.Windows.Forms.GroupBox();
             this.rdbtnnofever = new System.Windows.Forms.RadioButton();
             this.rdbtnyesfever = new System.Windows.Forms.RadioButton();
-            this.MonthListBox = new System.Windows.Forms.ListBox();
-            this.YearListBox = new System.Windows.Forms.ListBox();
-            this.DateLabel = new System.Windows.Forms.Label();
+            this.DTpicker = new System.Windows.Forms.DateTimePicker();
+            this.Datelbl = new System.Windows.Forms.Label();
+            this.celsiuslbl = new System.Windows.Forms.Label();
             this.grpboxfirstdose.SuspendLayout();
             this.grpboxseconddose.SuspendLayout();
             this.grpboxtestedpstv.SuspendLayout();
@@ -227,17 +227,17 @@
             // 
             this.temperaturelbl.AutoSize = true;
             this.temperaturelbl.BackColor = System.Drawing.Color.Transparent;
-            this.temperaturelbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.temperaturelbl.Location = new System.Drawing.Point(504, 196);
+            this.temperaturelbl.Font = new System.Drawing.Font("Showcard Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.temperaturelbl.Location = new System.Drawing.Point(527, 196);
             this.temperaturelbl.Name = "temperaturelbl";
-            this.temperaturelbl.Size = new System.Drawing.Size(147, 23);
+            this.temperaturelbl.Size = new System.Drawing.Size(103, 17);
             this.temperaturelbl.TabIndex = 13;
-            this.temperaturelbl.Text = "TEMPERATURE :";
+            this.temperaturelbl.Text = "TEMPERATURE";
             // 
             // temperaturetxtbox
             // 
             this.temperaturetxtbox.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.temperaturetxtbox.Location = new System.Drawing.Point(657, 196);
+            this.temperaturetxtbox.Location = new System.Drawing.Point(657, 205);
             this.temperaturetxtbox.Multiline = true;
             this.temperaturetxtbox.Name = "temperaturetxtbox";
             this.temperaturetxtbox.Size = new System.Drawing.Size(106, 23);
@@ -621,63 +621,36 @@
             this.rdbtnyesfever.Text = "YES";
             this.rdbtnyesfever.UseVisualStyleBackColor = true;
             // 
-            // MonthListBox
+            // DTpicker
             // 
-            this.MonthListBox.ColumnWidth = 5;
-            this.MonthListBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.MonthListBox.FormattingEnabled = true;
-            this.MonthListBox.ItemHeight = 19;
-            this.MonthListBox.Items.AddRange(new object[] {
-            "January",
-            "February",
-            "March",
-            "April",
-            "May",
-            "June",
-            "July",
-            "August",
-            "September",
-            "October",
-            "November",
-            "December"});
-            this.MonthListBox.Location = new System.Drawing.Point(580, 78);
-            this.MonthListBox.Name = "MonthListBox";
-            this.MonthListBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.MonthListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.MonthListBox.Size = new System.Drawing.Size(109, 23);
-            this.MonthListBox.TabIndex = 57;
-            this.MonthListBox.Tag = "";
-            this.MonthListBox.SelectedIndexChanged += new System.EventHandler(this.MonthListBox_SelectedIndexChanged);
+            this.DTpicker.CalendarFont = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.DTpicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.DTpicker.Location = new System.Drawing.Point(639, 73);
+            this.DTpicker.Name = "DTpicker";
+            this.DTpicker.Size = new System.Drawing.Size(124, 27);
+            this.DTpicker.TabIndex = 60;
             // 
-            // YearListBox
+            // Datelbl
             // 
-            this.YearListBox.ColumnWidth = 5;
-            this.YearListBox.Font = new System.Drawing.Font("Times New Roman", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.YearListBox.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.YearListBox.FormattingEnabled = true;
-            this.YearListBox.ItemHeight = 19;
-            this.YearListBox.Items.AddRange(new object[] {
-            "2020",
-            "2021",
-            "2022"});
-            this.YearListBox.Location = new System.Drawing.Point(695, 78);
-            this.YearListBox.Name = "YearListBox";
-            this.YearListBox.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.YearListBox.SelectionMode = System.Windows.Forms.SelectionMode.None;
-            this.YearListBox.Size = new System.Drawing.Size(68, 23);
-            this.YearListBox.TabIndex = 58;
-            this.YearListBox.Tag = "";
+            this.Datelbl.AutoSize = true;
+            this.Datelbl.BackColor = System.Drawing.Color.Transparent;
+            this.Datelbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Datelbl.Location = new System.Drawing.Point(574, 75);
+            this.Datelbl.Name = "Datelbl";
+            this.Datelbl.Size = new System.Drawing.Size(65, 23);
+            this.Datelbl.TabIndex = 61;
+            this.Datelbl.Text = "DATE :";
             // 
-            // DateLabel
+            // celsiuslbl
             // 
-            this.DateLabel.AutoSize = true;
-            this.DateLabel.BackColor = System.Drawing.Color.Transparent;
-            this.DateLabel.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.DateLabel.Location = new System.Drawing.Point(509, 78);
-            this.DateLabel.Name = "DateLabel";
-            this.DateLabel.Size = new System.Drawing.Size(65, 23);
-            this.DateLabel.TabIndex = 59;
-            this.DateLabel.Text = "DATE :";
+            this.celsiuslbl.AutoSize = true;
+            this.celsiuslbl.BackColor = System.Drawing.Color.Transparent;
+            this.celsiuslbl.Font = new System.Drawing.Font("Showcard Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.celsiuslbl.Location = new System.Drawing.Point(507, 213);
+            this.celsiuslbl.Name = "celsiuslbl";
+            this.celsiuslbl.Size = new System.Drawing.Size(145, 17);
+            this.celsiuslbl.TabIndex = 62;
+            this.celsiuslbl.Text = "(in degree celsius) :";
             // 
             // ContactTracingAppScreeningInfo
             // 
@@ -688,9 +661,9 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 532);
-            this.Controls.Add(this.DateLabel);
-            this.Controls.Add(this.YearListBox);
-            this.Controls.Add(this.MonthListBox);
+            this.Controls.Add(this.celsiuslbl);
+            this.Controls.Add(this.Datelbl);
+            this.Controls.Add(this.DTpicker);
             this.Controls.Add(this.grpboxfever);
             this.Controls.Add(this.grpboxlossofsmell);
             this.Controls.Add(this.grpboxlossoftaste);
@@ -800,8 +773,8 @@
         private GroupBox grpboxfever;
         private RadioButton rdbtnnofever;
         private RadioButton rdbtnyesfever;
-        private ListBox MonthListBox;
-        private ListBox YearListBox;
-        private Label DateLabel;
+        private DateTimePicker DTpicker;
+        private Label Datelbl;
+        private Label celsiuslbl;
     }
 }
