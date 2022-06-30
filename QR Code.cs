@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
+using ZXing;
 
 namespace Contact_Tracing_App
 {
@@ -51,7 +52,12 @@ namespace Contact_Tracing_App
         {
             if (camerapicbox.Image != null)
             {
-                
+                BarcodeReader barcodeReader = new BarcodeReader();
+                Result result = barcodeReader.Decode((Bitmap)camerapicbox.Image);
+                if (result != null)
+                {
+                    
+                }
 
             }
         }

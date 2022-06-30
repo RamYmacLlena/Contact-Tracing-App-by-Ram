@@ -51,14 +51,14 @@
             this.camerapicbox.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.camerapicbox.Location = new System.Drawing.Point(163, 51);
             this.camerapicbox.Name = "camerapicbox";
-            this.camerapicbox.Size = new System.Drawing.Size(491, 446);
+            this.camerapicbox.Size = new System.Drawing.Size(491, 341);
             this.camerapicbox.TabIndex = 1;
             this.camerapicbox.TabStop = false;
             // 
             // Scanbtn
             // 
             this.Scanbtn.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Scanbtn.Location = new System.Drawing.Point(322, 503);
+            this.Scanbtn.Location = new System.Drawing.Point(329, 410);
             this.Scanbtn.Name = "Scanbtn";
             this.Scanbtn.Size = new System.Drawing.Size(147, 44);
             this.Scanbtn.TabIndex = 2;
@@ -86,7 +86,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 553);
+            this.ClientSize = new System.Drawing.Size(800, 461);
             this.Controls.Add(this.cameralbl);
             this.Controls.Add(this.Scanbtn);
             this.Controls.Add(this.camerapicbox);

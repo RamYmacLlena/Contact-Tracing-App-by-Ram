@@ -25,7 +25,6 @@ C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\Con
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\Contact-Tracing-App.pdb
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact-Tracing-App.csproj.AssemblyReference.cache
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact_Tracing_App.StartForm.resources
-C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact_Tracing_App.ContactTracingAppScreeningInfo.resources
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact_Tracing_App.RecordsForm.resources
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact_Tracing_App.Properties.Resources.resources
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact-Tracing-App.csproj.GenerateResource.cache
@@ -38,3 +37,12 @@ C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\ref
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact-Tracing-App.pdb
 C:\Users\au\Source\Repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact-Tracing-App.genruntimeconfig.cache
 C:\Users\au\Source\Repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\ref\Contact-Tracing-App.dll
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\AForge.dll
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\AForge.Video.dll
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\AForge.Video.DirectShow.dll
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\Zen.Barcode.Core.dll
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\zxing.dll
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact_Tracing_App.QR_Code.resources
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact-Tracing-App.csproj.CopyComplete
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\QRCoder.dll
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact_Tracing_App.QRCODELBL.resources

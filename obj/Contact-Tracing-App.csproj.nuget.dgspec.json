@@ -48,17 +48,17 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
-            "BarCode": {
+            "QRCoder": {
               "target": "Package",
-              "version": "[2022.5.5918, )"
-            },
-            "ZXing": {
-              "target": "Package",
-              "version": "[2.1.1, )"
+              "version": "[1.4.3, )"
             },
             "ZXing.Net": {
               "target": "Package",
               "version": "[0.16.6, )"
+            },
+            "Zen.Barcode.Rendering.Framework": {
+              "target": "Package",
+              "version": "[3.1.10729.1, )"
             }
           },
           "imports": [

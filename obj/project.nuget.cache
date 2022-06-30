@@ -1,17 +1,16 @@
 {
   "version": 2,
-  "dgSpecHash": "/RpnWpkehGaVAS5alKVLGpB9WyVceeIcpiq14Xf0hSGov8w1/n3kenqJjf1Y0wHWY0Rhlh+LvQWGOkmrIYB4Jg==",
+  "dgSpecHash": "3Eqg4lj1qRESFWe3G49LNOAIQClg4su9GaLCFwGayvsd6cJrySwiFieDSgUs0ZxPIZUmwfcFD3zrSkL9hUqxmg==",
   "success": true,
   "projectFilePath": "C:\\Users\\au\\source\\repos\\Contact-Tracing-App-by-Ram\\Contact-Tracing-App.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\au\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\au\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
     "C:\\Users\\au\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\au\\.nuget\\packages\\barcode\\2022.5.5918\\barcode.2022.5.5918.nupkg.sha512",
-    "C:\\Users\\au\\.nuget\\packages\\microsoft.netcore.platforms\\5.0.0\\microsoft.netcore.platforms.5.0.0.nupkg.sha512",
-    "C:\\Users\\au\\.nuget\\packages\\microsoft.win32.systemevents\\5.0.0\\microsoft.win32.systemevents.5.0.0.nupkg.sha512",
-    "C:\\Users\\au\\.nuget\\packages\\system.drawing.common\\5.0.2\\system.drawing.common.5.0.2.nupkg.sha512",
-    "C:\\Users\\au\\.nuget\\packages\\zxing\\2.1.1\\zxing.2.1.1.nupkg.sha512",
+    "C:\\Users\\au\\.nuget\\packages\\microsoft.win32.systemevents\\6.0.0\\microsoft.win32.systemevents.6.0.0.nupkg.sha512",
+    "C:\\Users\\au\\.nuget\\packages\\qrcoder\\1.4.3\\qrcoder.1.4.3.nupkg.sha512",
+    "C:\\Users\\au\\.nuget\\packages\\system.drawing.common\\6.0.0\\system.drawing.common.6.0.0.nupkg.sha512",
+    "C:\\Users\\au\\.nuget\\packages\\zen.barcode.rendering.framework\\3.1.10729.1\\zen.barcode.rendering.framework.3.1.10729.1.nupkg.sha512",
     "C:\\Users\\au\\.nuget\\packages\\zxing.net\\0.16.6\\zxing.net.0.16.6.nupkg.sha512"
   ],
   "logs": [
@@ -49,8 +48,8 @@
       "code": "NU1701",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Package 'ZXing 2.1.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
-      "libraryId": "ZXing",
+      "message": "Package 'Zen.Barcode.Rendering.Framework 3.1.10729.1' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8' instead of the project target framework 'net6.0-windows7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "Zen.Barcode.Rendering.Framework",
       "targetGraphs": [
         "net6.0-windows7.0"
       ]

@@ -1,6 +1,6 @@
 ﻿namespace Contact_Tracing_App
 {
-    partial class ContactTracingAppScreeningInfo
+    partial class QRCODELBL
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ContactTracingAppScreeningInfo));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QRCODELBL));
             this.titilelbl = new System.Windows.Forms.Label();
             this.namelbl = new System.Windows.Forms.Label();
             this.agelbl = new System.Windows.Forms.Label();
@@ -80,12 +80,20 @@
             this.DTpicker = new System.Windows.Forms.DateTimePicker();
             this.Datelbl = new System.Windows.Forms.Label();
             this.celsiuslbl = new System.Windows.Forms.Label();
+            this.QRPICBOXGNRTR = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GenerateQRbtn = new System.Windows.Forms.Button();
+            this.Saveqrbtn = new System.Windows.Forms.Button();
+            this.optionallbl = new System.Windows.Forms.Label();
+            this.UUIDtxtbox = new System.Windows.Forms.TextBox();
+            this.TxtBoxinfo = new System.Windows.Forms.TextBox();
             this.grpboxfirstdose.SuspendLayout();
             this.grpboxseconddose.SuspendLayout();
             this.grpboxtestedpstv.SuspendLayout();
             this.grpboxlossoftaste.SuspendLayout();
             this.grpboxlossofsmell.SuspendLayout();
             this.grpboxfever.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QRPICBOXGNRTR)).BeginInit();
             this.SuspendLayout();
             // 
             // titilelbl
@@ -347,7 +355,7 @@
             // 
             this.submitbtn.BackColor = System.Drawing.Color.Aqua;
             this.submitbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.submitbtn.Location = new System.Drawing.Point(340, 482);
+            this.submitbtn.Location = new System.Drawing.Point(341, 481);
             this.submitbtn.Name = "submitbtn";
             this.submitbtn.Size = new System.Drawing.Size(123, 39);
             this.submitbtn.TabIndex = 45;
@@ -359,7 +367,7 @@
             // 
             this.clearbtn.BackColor = System.Drawing.Color.Aqua;
             this.clearbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clearbtn.Location = new System.Drawing.Point(105, 482);
+            this.clearbtn.Location = new System.Drawing.Point(114, 482);
             this.clearbtn.Name = "clearbtn";
             this.clearbtn.Size = new System.Drawing.Size(144, 39);
             this.clearbtn.TabIndex = 46;
@@ -371,7 +379,7 @@
             // 
             this.exitbtn.BackColor = System.Drawing.Color.Aqua;
             this.exitbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exitbtn.Location = new System.Drawing.Point(560, 482);
+            this.exitbtn.Location = new System.Drawing.Point(574, 481);
             this.exitbtn.Name = "exitbtn";
             this.exitbtn.Size = new System.Drawing.Size(123, 39);
             this.exitbtn.TabIndex = 47;
@@ -653,7 +661,82 @@
             this.celsiuslbl.TabIndex = 62;
             this.celsiuslbl.Text = "(in degree celsius) :";
             // 
-            // ContactTracingAppScreeningInfo
+            // QRPICBOXGNRTR
+            // 
+            this.QRPICBOXGNRTR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.QRPICBOXGNRTR.Location = new System.Drawing.Point(793, 92);
+            this.QRPICBOXGNRTR.Name = "QRPICBOXGNRTR";
+            this.QRPICBOXGNRTR.Size = new System.Drawing.Size(348, 300);
+            this.QRPICBOXGNRTR.TabIndex = 63;
+            this.QRPICBOXGNRTR.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.label3.Location = new System.Drawing.Point(808, 52);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(323, 37);
+            this.label3.TabIndex = 64;
+            this.label3.Text = "QR CODE GENERATOR";
+            // 
+            // GenerateQRbtn
+            // 
+            this.GenerateQRbtn.BackColor = System.Drawing.Color.Aqua;
+            this.GenerateQRbtn.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.GenerateQRbtn.Location = new System.Drawing.Point(860, 434);
+            this.GenerateQRbtn.Name = "GenerateQRbtn";
+            this.GenerateQRbtn.Size = new System.Drawing.Size(210, 39);
+            this.GenerateQRbtn.TabIndex = 65;
+            this.GenerateQRbtn.Text = "Generate Qr Code";
+            this.GenerateQRbtn.UseVisualStyleBackColor = false;
+            this.GenerateQRbtn.Click += new System.EventHandler(this.GenerateQRbtn_Click);
+            // 
+            // Saveqrbtn
+            // 
+            this.Saveqrbtn.BackColor = System.Drawing.Color.Aqua;
+            this.Saveqrbtn.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Saveqrbtn.Location = new System.Drawing.Point(890, 481);
+            this.Saveqrbtn.Name = "Saveqrbtn";
+            this.Saveqrbtn.Size = new System.Drawing.Size(154, 39);
+            this.Saveqrbtn.TabIndex = 66;
+            this.Saveqrbtn.Text = "Save QR Code";
+            this.Saveqrbtn.UseVisualStyleBackColor = false;
+            this.Saveqrbtn.Click += new System.EventHandler(this.Saveqrbtn_Click);
+            // 
+            // optionallbl
+            // 
+            this.optionallbl.AutoSize = true;
+            this.optionallbl.BackColor = System.Drawing.Color.Transparent;
+            this.optionallbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.optionallbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
+            this.optionallbl.Location = new System.Drawing.Point(793, 18);
+            this.optionallbl.Name = "optionallbl";
+            this.optionallbl.Size = new System.Drawing.Size(104, 23);
+            this.optionallbl.TabIndex = 67;
+            this.optionallbl.Text = "Optional:";
+            // 
+            // UUIDtxtbox
+            // 
+            this.UUIDtxtbox.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.UUIDtxtbox.Location = new System.Drawing.Point(826, 401);
+            this.UUIDtxtbox.Multiline = true;
+            this.UUIDtxtbox.Name = "UUIDtxtbox";
+            this.UUIDtxtbox.Size = new System.Drawing.Size(281, 23);
+            this.UUIDtxtbox.TabIndex = 68;
+            // 
+            // TxtBoxinfo
+            // 
+            this.TxtBoxinfo.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.TxtBoxinfo.Location = new System.Drawing.Point(808, 104);
+            this.TxtBoxinfo.Multiline = true;
+            this.TxtBoxinfo.Name = "TxtBoxinfo";
+            this.TxtBoxinfo.Size = new System.Drawing.Size(323, 276);
+            this.TxtBoxinfo.TabIndex = 69;
+            // 
+            // QRCODELBL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -661,7 +744,13 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(800, 532);
+            this.ClientSize = new System.Drawing.Size(1153, 532);
+            this.Controls.Add(this.UUIDtxtbox);
+            this.Controls.Add(this.optionallbl);
+            this.Controls.Add(this.Saveqrbtn);
+            this.Controls.Add(this.GenerateQRbtn);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.QRPICBOXGNRTR);
             this.Controls.Add(this.celsiuslbl);
             this.Controls.Add(this.Datelbl);
             this.Controls.Add(this.DTpicker);
@@ -701,9 +790,10 @@
             this.Controls.Add(this.agelbl);
             this.Controls.Add(this.namelbl);
             this.Controls.Add(this.titilelbl);
+            this.Controls.Add(this.TxtBoxinfo);
             this.DoubleBuffered = true;
             this.HelpButton = true;
-            this.Name = "ContactTracingAppScreeningInfo";
+            this.Name = "QRCODELBL";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterParent;
             this.Text = "CONTACT TRACING FORM";
             this.Load += new System.EventHandler(this.ContactTracingAppScreeningInfo_Load);
@@ -719,6 +809,7 @@
             this.grpboxlossofsmell.PerformLayout();
             this.grpboxfever.ResumeLayout(false);
             this.grpboxfever.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.QRPICBOXGNRTR)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -777,5 +868,12 @@
         private DateTimePicker DTpicker;
         private Label Datelbl;
         private Label celsiuslbl;
+        private PictureBox QRPICBOXGNRTR;
+        private Label label3;
+        private Button GenerateQRbtn;
+        private Button Saveqrbtn;
+        private Label optionallbl;
+        private TextBox UUIDtxtbox;
+        private TextBox TxtBoxinfo;
     }
 }

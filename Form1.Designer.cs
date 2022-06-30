@@ -34,6 +34,7 @@
             this.startbtn = new System.Windows.Forms.Button();
             this.exitbtn = new System.Windows.Forms.Button();
             this.SeeDataRecodsbtn = new System.Windows.Forms.Button();
+            this.ScanQRcodebtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.imgBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -89,8 +90,8 @@
             // SeeDataRecodsbtn
             // 
             this.SeeDataRecodsbtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.SeeDataRecodsbtn.Font = new System.Drawing.Font("Showcard Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.SeeDataRecodsbtn.Location = new System.Drawing.Point(114, 358);
+            this.SeeDataRecodsbtn.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.SeeDataRecodsbtn.Location = new System.Drawing.Point(34, 358);
             this.SeeDataRecodsbtn.Name = "SeeDataRecodsbtn";
             this.SeeDataRecodsbtn.Size = new System.Drawing.Size(149, 63);
             this.SeeDataRecodsbtn.TabIndex = 4;
@@ -98,12 +99,24 @@
             this.SeeDataRecodsbtn.UseVisualStyleBackColor = false;
             this.SeeDataRecodsbtn.Click += new System.EventHandler(this.SeeDataRecodsbtn_Click);
             // 
+            // ScanQRcodebtn
+            // 
+            this.ScanQRcodebtn.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ScanQRcodebtn.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.ScanQRcodebtn.Location = new System.Drawing.Point(190, 358);
+            this.ScanQRcodebtn.Name = "ScanQRcodebtn";
+            this.ScanQRcodebtn.Size = new System.Drawing.Size(149, 63);
+            this.ScanQRcodebtn.TabIndex = 5;
+            this.ScanQRcodebtn.Text = "SCAN YOUR QR CODE";
+            this.ScanQRcodebtn.UseVisualStyleBackColor = false;
+            // 
             // StartForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.ClientSize = new System.Drawing.Size(380, 496);
+            this.Controls.Add(this.ScanQRcodebtn);
             this.Controls.Add(this.SeeDataRecodsbtn);
             this.Controls.Add(this.exitbtn);
             this.Controls.Add(this.startbtn);
@@ -124,5 +137,6 @@
         private Button startbtn;
         private Button exitbtn;
         private Button SeeDataRecodsbtn;
+        private Button ScanQRcodebtn;
     }
 }
