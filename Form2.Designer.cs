@@ -726,6 +726,7 @@
             this.UUIDtxtbox.Name = "UUIDtxtbox";
             this.UUIDtxtbox.Size = new System.Drawing.Size(281, 23);
             this.UUIDtxtbox.TabIndex = 68;
+            this.UUIDtxtbox.TextChanged += new System.EventHandler(this.UUIDtxtbox_TextChanged);
             // 
             // TxtBoxinfo
             // 

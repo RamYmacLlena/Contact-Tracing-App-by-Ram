@@ -191,7 +191,7 @@ namespace Contact_Tracing_App
 
         private void GenerateQRbtn_Click(object sender, EventArgs e)
         {
-            string UUIDtag = nametxtbox.Text + DateTime.Now.ToString("HHmmss");
+            string UUIDtag = UUIDtxtbox.Text;
             string FirstDoseAnswer = null;
             string SecondDoseAnswer = null;
             string TestPositiveAnswer = null;
@@ -305,7 +305,7 @@ namespace Contact_Tracing_App
                 QRPICBOXGNRTR.Image = code.GetGraphic(3);
 
 
-                UUIDtag = Name;
+                UUIDtxtbox.Text = UUIDtag ;
 
                 Saveqrbtn.Enabled = true;
                 GenerateQRbtn.Enabled = false;
@@ -314,11 +314,10 @@ namespace Contact_Tracing_App
 
         private void Saveqrbtn_Click(object sender, EventArgs e)
         {
-            string UUIDtag = nametxtbox.Text + DateTime.Now.ToString("HHmmss");
             using (var bmp = new Bitmap(QRPICBOXGNRTR.Width, QRPICBOXGNRTR.Height))
             {
                 QRPICBOXGNRTR.DrawToBitmap(bmp, new Rectangle(0, 0, bmp.Width, bmp.Height));
-                bmp.Save("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing App Infos\\Contact Tracing QR Codes\\" + UUIDtag + ".jpeg");
+                bmp.Save("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes\\" + UUIDtxtbox.Text + ".jpeg");
 
                 MessageBox.Show("QR Code has been saved.");
                 nametxtbox.Text = ("");
@@ -327,7 +326,7 @@ namespace Contact_Tracing_App
                 agetxtbox.Text = ("");
                 sextxtbox.Text = ("");
                 temperaturetxtbox.Text = ("");
-                UUIDtag = ("");
+                UUIDtxtbox.Text = ("");
                 rdbtnyesfrstdose.Checked = false;
                 rdbtnnofrstdose.Checked = false;
                 rdbtnyesscnddose.Checked = false;
@@ -341,6 +340,11 @@ namespace Contact_Tracing_App
                 rdbtnyeslossofsml.Checked = false;
                 rdbtnnolossofsml.Checked = false;
             }
+        }
+
+        private void UUIDtxtbox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
