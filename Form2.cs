@@ -114,11 +114,10 @@ namespace Contact_Tracing_App
             {
                 MessageBox.Show("Please answer the blank sections!");
             }
-            else
+            else if (GenerateQRbtn.Enabled == false && Saveqrbtn.Enabled == false)
             {
-
                 var tracing = new[]
-                {
+            {
                     ("UUID", nametxtbox.Text + DateTime.Now.ToString("HHmmss")), ("Name", nametxtbox.Text), ("Address", addresstxtbox.Text),
                     ("Contact Number", contactnotxtbox.Text), ("Age", agetxtbox.Text),  ("Sex", sextxtbox.Text), ("Temperature", temperaturetxtbox.Text),
                     ("First Dose", FirstDoseAnswer), ("Second Dose", SecondDoseAnswer), ("Have had contact with someone who tested postive", TestPositiveAnswer),
@@ -127,16 +126,46 @@ namespace Contact_Tracing_App
                 string details = string.Join(",", tracing);
                 StreamWriter file = File.AppendText("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing App Infos\\Contact Tracing Information.txt");
                 file.WriteLine(details);
-                //for (int i = 0; i < 14; i++)
-                //{
-                //    file.WriteLine(tracing[i]);
-                //}
 
                 file.Close();
                 MessageBox.Show("Registration Successful!");
                 QRCODELBL NewForm = new QRCODELBL();
                 NewForm.Show();
                 this.Dispose(false);
+            }
+            else
+            {
+
+                DialogResult dialogResult = MessageBox.Show("Do you want to submit without a QR Code?", "OPTIONAL", MessageBoxButtons.YesNo);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    var tracing = new[]
+                {
+                    ("UUID", nametxtbox.Text + DateTime.Now.ToString("HHmmss")), ("Name", nametxtbox.Text), ("Address", addresstxtbox.Text),
+                    ("Contact Number", contactnotxtbox.Text), ("Age", agetxtbox.Text),  ("Sex", sextxtbox.Text), ("Temperature", temperaturetxtbox.Text),
+                    ("First Dose", FirstDoseAnswer), ("Second Dose", SecondDoseAnswer), ("Have had contact with someone who tested postive", TestPositiveAnswer),
+                    ("Fever", FeverAnswer), ("Loss of Taste", LossofTasteAnswer), ("Loss of Smell", LossofSmellAnswer), ("Date", DTpicker.Text),
+                };
+                    string details = string.Join(",", tracing);
+                    StreamWriter file = File.AppendText("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing App Infos\\Contact Tracing Information.txt");
+                    file.WriteLine(details);
+                    //for (int i = 0; i < 14; i++)
+                    //{
+                    //    file.WriteLine(tracing[i]);
+                    //}
+
+                    file.Close();
+                    MessageBox.Show("Registration Successful!");
+                    QRCODELBL NewForm = new QRCODELBL();
+                    NewForm.Show();
+                    this.Dispose(false);
+
+
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                   
+                }
             }
 
 
@@ -164,6 +193,8 @@ namespace Contact_Tracing_App
             rdbtnnolossoftaste.Checked = false;
             rdbtnyeslossofsml.Checked = false;
             rdbtnnolossofsml.Checked = false;
+            GenerateQRbtn.Enabled = false;
+            Saveqrbtn.Enabled = false;
         }
         private void exitbtn_Click(object sender, EventArgs e)
         {
@@ -191,7 +222,7 @@ namespace Contact_Tracing_App
 
         private void GenerateQRbtn_Click(object sender, EventArgs e)
         {
-            string UUIDtag = UUIDtxtbox.Text;
+            UUIDtxtbox.Text = nametxtbox.Text + DateTime.Now.ToString("HHmmss");
             string FirstDoseAnswer = null;
             string SecondDoseAnswer = null;
             string TestPositiveAnswer = null;
@@ -304,9 +335,6 @@ namespace Contact_Tracing_App
                 QRCode code = new QRCode(data);
                 QRPICBOXGNRTR.Image = code.GetGraphic(3);
 
-
-                UUIDtxtbox.Text = UUIDtag ;
-
                 Saveqrbtn.Enabled = true;
                 GenerateQRbtn.Enabled = false;
             }
@@ -320,25 +348,7 @@ namespace Contact_Tracing_App
                 bmp.Save("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes\\" + UUIDtxtbox.Text + ".jpeg");
 
                 MessageBox.Show("QR Code has been saved.");
-                nametxtbox.Text = ("");
-                addresstxtbox.Text = ("");
-                contactnotxtbox.Text = ("");
-                agetxtbox.Text = ("");
-                sextxtbox.Text = ("");
-                temperaturetxtbox.Text = ("");
-                UUIDtxtbox.Text = ("");
-                rdbtnyesfrstdose.Checked = false;
-                rdbtnnofrstdose.Checked = false;
-                rdbtnyesscnddose.Checked = false;
-                rdbtnnoscnddose.Checked = false;
-                rdbtnyeststpstv.Checked = false;
-                rdbtnnotstpstv.Checked = false;
-                rdbtnyesfever.Checked = false;
-                rdbtnnofever.Checked = false;
-                rdbtnyeslossoftaste.Checked = false;
-                rdbtnnolossoftaste.Checked = false;
-                rdbtnyeslossofsml.Checked = false;
-                rdbtnnolossofsml.Checked = false;
+                Saveqrbtn.Enabled = false;
             }
         }
 
