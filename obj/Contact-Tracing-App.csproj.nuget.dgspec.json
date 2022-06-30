@@ -43,6 +43,24 @@
       "frameworks": {
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
+          "dependencies": {
+            "AForge.Video.DirectShow": {
+              "target": "Package",
+              "version": "[2.2.5, )"
+            },
+            "BarCode": {
+              "target": "Package",
+              "version": "[2022.5.5918, )"
+            },
+            "ZXing": {
+              "target": "Package",
+              "version": "[2.1.1, )"
+            },
+            "ZXing.Net": {
+              "target": "Package",
+              "version": "[0.16.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
