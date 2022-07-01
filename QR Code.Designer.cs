@@ -38,6 +38,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.submitbtn = new System.Windows.Forms.Button();
             this.QRscannedinfoDatagridview = new System.Windows.Forms.DataGridView();
+            this.backbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.camerapicbox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QRscannedinfoDatagridview)).BeginInit();
             this.SuspendLayout();
@@ -125,6 +126,18 @@
             this.QRscannedinfoDatagridview.TabIndex = 7;
             this.QRscannedinfoDatagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.QRscannedinfoDatagridview_CellContentClick);
             // 
+            // backbtn
+            // 
+            this.backbtn.BackColor = System.Drawing.Color.Aqua;
+            this.backbtn.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.backbtn.Location = new System.Drawing.Point(608, 405);
+            this.backbtn.Name = "backbtn";
+            this.backbtn.Size = new System.Drawing.Size(129, 44);
+            this.backbtn.TabIndex = 8;
+            this.backbtn.Text = "BACK";
+            this.backbtn.UseVisualStyleBackColor = false;
+            this.backbtn.Click += new System.EventHandler(this.backbtn_Click);
+            // 
             // QR_Code
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -132,6 +145,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(856, 461);
+            this.Controls.Add(this.backbtn);
             this.Controls.Add(this.QRscannedinfoDatagridview);
             this.Controls.Add(this.submitbtn);
             this.Controls.Add(this.label1);
@@ -160,5 +174,6 @@
         private Label label1;
         private Button submitbtn;
         private DataGridView QRscannedinfoDatagridview;
+        private Button backbtn;
     }
 }

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using AForge.Video;
 using AForge.Video.DirectShow;
 using ZXing;
+using System.IO;
 
 namespace Contact_Tracing_App
 {
@@ -39,8 +40,22 @@ namespace Contact_Tracing_App
             captureDevice.NewFrame += CaptureDevice_NewFrame;
             captureDevice.Start();
             timerscan.Start();
-        }
 
+            string file = "D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text";
+            if (Directory.Exists(Path.GetDirectoryName(file)))
+            {
+                File.Delete(file);
+            }
+            this.QRscannedinfoDatagridview.DataSource = null;
+            this.QRscannedinfoDatagridview.Rows.Clear();
+            //   if (System.IO.File.Exists("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text"))
+            //      System.IO.File.Delete("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text"));
+            //  if (File.Exists("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text"))
+            // {
+            //     File.Delete("QR Scan to Read.Text");
+            // }
+        }
+        public bool Thereisanexistingfile = false;
         private void CaptureDevice_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
         {
             camerapicbox.Image = (Bitmap)eventArgs.Frame.Clone();
@@ -141,11 +156,18 @@ namespace Contact_Tracing_App
 
             file.Close();
             MessageBox.Show("Registration Successful!");
+
+            submitbtn.Enabled = false;
         }
 
         private void QRscannedinfoDatagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void backbtn_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }
