@@ -55,7 +55,6 @@ namespace Contact_Tracing_App
             //     File.Delete("QR Scan to Read.Text");
             // }
         }
-        public bool Thereisanexistingfile = false;
         private void CaptureDevice_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
         {
             camerapicbox.Image = (Bitmap)eventArgs.Frame.Clone();
@@ -150,15 +149,6 @@ namespace Contact_Tracing_App
             dtbl = (DataTable)QRscannedinfoDatagridview.DataSource;
         }
 
-    private void submitbtn_Click(object sender, EventArgs e)
-        {
-            StreamWriter file = File.AppendText("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing App Infos\\Contact Tracing Information.txt");
-
-            file.Close();
-            MessageBox.Show("Registration Successful!");
-
-            submitbtn.Enabled = false;
-        }
 
         private void QRscannedinfoDatagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -168,6 +158,25 @@ namespace Contact_Tracing_App
         private void backbtn_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Proceedbtn_Click(object sender, EventArgs e)
+        {
+            QRCODELBL form = new QRCODELBL();
+            form.Show();
+            QRscannedinfoDatagridview.Rows[0].Cells[0].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[1].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[2].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[3].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[4].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[5].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[6].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[7].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[8].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[9].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[10].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[11].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[12].Value.ToString();
         }
     }
 }

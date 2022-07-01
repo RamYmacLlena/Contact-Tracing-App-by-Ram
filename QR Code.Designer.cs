@@ -36,7 +36,7 @@
             this.cameralbl = new System.Windows.Forms.Label();
             this.timerscan = new System.Windows.Forms.Timer(this.components);
             this.label1 = new System.Windows.Forms.Label();
-            this.submitbtn = new System.Windows.Forms.Button();
+            this.Proceedbtn = new System.Windows.Forms.Button();
             this.QRscannedinfoDatagridview = new System.Windows.Forms.DataGridView();
             this.backbtn = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.camerapicbox)).BeginInit();
@@ -103,17 +103,17 @@
             this.label1.TabIndex = 5;
             this.label1.Text = "QR Data Info :";
             // 
-            // submitbtn
+            // Proceedbtn
             // 
-            this.submitbtn.BackColor = System.Drawing.Color.Aqua;
-            this.submitbtn.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.submitbtn.Location = new System.Drawing.Point(589, 343);
-            this.submitbtn.Name = "submitbtn";
-            this.submitbtn.Size = new System.Drawing.Size(166, 44);
-            this.submitbtn.TabIndex = 6;
-            this.submitbtn.Text = "Submit Data";
-            this.submitbtn.UseVisualStyleBackColor = false;
-            this.submitbtn.Click += new System.EventHandler(this.submitbtn_Click);
+            this.Proceedbtn.BackColor = System.Drawing.Color.Aqua;
+            this.Proceedbtn.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Proceedbtn.Location = new System.Drawing.Point(554, 343);
+            this.Proceedbtn.Name = "Proceedbtn";
+            this.Proceedbtn.Size = new System.Drawing.Size(266, 44);
+            this.Proceedbtn.TabIndex = 6;
+            this.Proceedbtn.Text = "Proceed to Auto-fill";
+            this.Proceedbtn.UseVisualStyleBackColor = false;
+            this.Proceedbtn.Click += new System.EventHandler(this.Proceedbtn_Click);
             // 
             // QRscannedinfoDatagridview
             // 
@@ -130,7 +130,7 @@
             // 
             this.backbtn.BackColor = System.Drawing.Color.Aqua;
             this.backbtn.Font = new System.Drawing.Font("Showcard Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.backbtn.Location = new System.Drawing.Point(608, 405);
+            this.backbtn.Location = new System.Drawing.Point(616, 405);
             this.backbtn.Name = "backbtn";
             this.backbtn.Size = new System.Drawing.Size(129, 44);
             this.backbtn.TabIndex = 8;
@@ -147,7 +147,7 @@
             this.ClientSize = new System.Drawing.Size(856, 461);
             this.Controls.Add(this.backbtn);
             this.Controls.Add(this.QRscannedinfoDatagridview);
-            this.Controls.Add(this.submitbtn);
+            this.Controls.Add(this.Proceedbtn);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cameralbl);
             this.Controls.Add(this.Scanbtn);
@@ -172,7 +172,7 @@
         private Label cameralbl;
         private System.Windows.Forms.Timer timerscan;
         private Label label1;
-        private Button submitbtn;
+        private Button Proceedbtn;
         private DataGridView QRscannedinfoDatagridview;
         private Button backbtn;
     }

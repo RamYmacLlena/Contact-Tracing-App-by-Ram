@@ -13,6 +13,7 @@ namespace Contact_Tracing_App
 {
     public partial class QRCODELBL : Form
     {
+        public static DataTable dtbl;
         public QRCODELBL()
         {
             InitializeComponent();
@@ -353,7 +354,162 @@ namespace Contact_Tracing_App
 
         private void Autofillbtn_Click(object sender, EventArgs e)
         {
-            StreamReader Read = new StreamReader("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text");
+            StreamReader inputFile = new StreamReader("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text");
+            var lines = File.ReadAllLines("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text");
+
+            var list = new List<string>();
+            for (int i = 0; i < lines.Length; i++)
+            {
+                //var values = lines[i].Split("/t");
+                list.Add(lines[i]);
+            }
+            DataTable dt = new DataTable();
+            dt.Columns.AddRange(new DataColumn[]
+            {
+                new DataColumn("UUID", typeof(string)),
+                new DataColumn("Name", typeof(string)),
+                new DataColumn("Address", typeof(string)),
+                new DataColumn("Contact Number", typeof(string)),
+                new DataColumn("Age", typeof(string)),
+                new DataColumn("Sex", typeof(string)),
+                new DataColumn("Temperature", typeof(string)),
+                new DataColumn("First Dose", typeof(string)),
+                new DataColumn("Second Dose", typeof(string)),
+                new DataColumn("Have had contact with someone who tested postive", typeof(string)),
+                new DataColumn("Fever", typeof(string)),
+                new DataColumn("Loss of Taste", typeof(string)),
+                new DataColumn("Loss of Smell", typeof(string)),
+                new DataColumn("Date Track", typeof(string)),
+            }); ;
+            foreach (var row in list)
+            {
+                var values = row.Split("),(");
+                var output = new List<string>();
+                for (int j = 0; j < values.Length; j++)
+                {
+                    var data = values[j].Substring(values[j].IndexOf(",") + 1);
+                    values[j] = data;
+                }
+
+                dt.Rows.Add(values);
+            }
+
+            QRscannedinfoDatagridview.DataSource = dt;
+            convertDate();
+            inputFile.Close();
+        }
+        private void convertDate()
+        {
+            int count = QRscannedinfoDatagridview.Rows.Count;
+            count = count - 1;
+            for (int i = 0; i < count; i++)
+            {
+                var date = QRscannedinfoDatagridview[13, i].Value;
+                date = date.ToString().Replace(@"),", string.Empty);
+                //var dateTrack = Convert.ToDateTime(date);
+                QRscannedinfoDatagridview[13, i].Value = date;
+            }
+            dtbl = (DataTable)QRscannedinfoDatagridview.DataSource;
+
+            UUIDtxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[0].Value.ToString();
+            nametxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[1].Value.ToString();
+            addresstxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[2].Value.ToString();
+            contactnotxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[3].Value.ToString();
+            agetxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[4].Value.ToString();
+            sextxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[5].Value.ToString();
+            temperaturetxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[6].Value.ToString();
+            string FirstDoseAnswer = QRscannedinfoDatagridview.Rows[0].Cells[7].Value.ToString();
+            string SecondDoseAnswer = QRscannedinfoDatagridview.Rows[0].Cells[8].Value.ToString();
+            string TestPositiveAnswer = QRscannedinfoDatagridview.Rows[0].Cells[9].Value.ToString();
+            string FeverAnswer = QRscannedinfoDatagridview.Rows[0].Cells[10].Value.ToString();
+            string LossofTasteAnswer = QRscannedinfoDatagridview.Rows[0].Cells[11].Value.ToString();
+            string LossofSmellAnswer = QRscannedinfoDatagridview.Rows[0].Cells[12].Value.ToString();
+
+            QRscannedinfoDatagridview.Rows[0].Cells[0].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[1].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[2].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[3].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[4].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[5].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[6].Value.ToString();
+
+            if (QRscannedinfoDatagridview.Rows[0].Cells[7].Value.ToString() == "Yes")
+            {
+                rdbtnnofrstdose.Checked = true;
+            } else
+            {
+                rdbtnyesfrstdose.Checked = true;
+            }
+            if (QRscannedinfoDatagridview.Rows[0].Cells[8].Value.ToString() == "Yes")
+            {
+                rdbtnnoscnddose.Checked = true;
+            } else
+            {
+                rdbtnyesscnddose.Checked = true;
+            }
+            if (QRscannedinfoDatagridview.Rows[0].Cells[9].Value.ToString() == "Yes")
+            {
+                rdbtnyeststpstv.Checked = true;
+            } else
+            {
+                rdbtnnotstpstv.Checked = true;
+            }
+            if (QRscannedinfoDatagridview.Rows[0].Cells[10].Value.ToString() == "Yes")
+            {
+                rdbtnyesfever.Checked = true;
+            } else
+            {
+                rdbtnnofever.Checked = true;
+            }
+            if (QRscannedinfoDatagridview.Rows[0].Cells[11].Value.ToString() == "Yes")
+            {
+                rdbtnyeslossoftaste.Checked = true;
+            } else
+            {
+                rdbtnnolossoftaste.Checked = true;
+            }
+            if (QRscannedinfoDatagridview.Rows[0].Cells[12].Value.ToString() == "Yes")
+            {
+                rdbtnyeslossofsml.Checked = true;
+            } else
+            {
+                rdbtnnolossofsml.Checked = true;
+            }
+
+            GenerateQRbtn.Enabled = false;
+            Saveqrbtn.Enabled = false;
+        }
+
+        private void QRscannedinfoDatagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+            UUIDtxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[0].Value.ToString();
+            nametxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[1].Value.ToString();
+            addresstxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[2].Value.ToString();
+            contactnotxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[3].Value.ToString();
+            agetxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[4].Value.ToString();
+            sextxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[5].Value.ToString();
+            temperaturetxtbox.Text = QRscannedinfoDatagridview.Rows[0].Cells[6].Value.ToString();
+            string FirstDoseAnswer = QRscannedinfoDatagridview.Rows[0].Cells[7].Value.ToString();
+            string SecondDoseAnswer = QRscannedinfoDatagridview.Rows[0].Cells[8].Value.ToString();
+            string TestPositiveAnswer = QRscannedinfoDatagridview.Rows[0].Cells[9].Value.ToString();
+            string FeverAnswer = QRscannedinfoDatagridview.Rows[0].Cells[10].Value.ToString();
+            string LossofTasteAnswer = QRscannedinfoDatagridview.Rows[0].Cells[11].Value.ToString();
+            string LossofSmellAnswer = QRscannedinfoDatagridview.Rows[0].Cells[12].Value.ToString();
+
+            QRscannedinfoDatagridview.Rows[0].Cells[0].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[1].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[2].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[3].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[4].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[5].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[6].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[7].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[8].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[9].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[10].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[11].Value.ToString();
+            QRscannedinfoDatagridview.Rows[0].Cells[12].Value.ToString();
         }
     }
 }

@@ -88,6 +88,7 @@
             this.TxtBoxinfo = new System.Windows.Forms.TextBox();
             this.UUIDlbl = new System.Windows.Forms.Label();
             this.Autofillbtn = new System.Windows.Forms.Button();
+            this.QRscannedinfoDatagridview = new System.Windows.Forms.DataGridView();
             this.grpboxfirstdose.SuspendLayout();
             this.grpboxseconddose.SuspendLayout();
             this.grpboxtestedpstv.SuspendLayout();
@@ -95,6 +96,7 @@
             this.grpboxlossofsmell.SuspendLayout();
             this.grpboxfever.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QRPICBOXGNRTR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QRscannedinfoDatagridview)).BeginInit();
             this.SuspendLayout();
             // 
             // titilelbl
@@ -710,10 +712,10 @@
             // UUIDtxtbox
             // 
             this.UUIDtxtbox.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.UUIDtxtbox.Location = new System.Drawing.Point(901, 376);
+            this.UUIDtxtbox.Location = new System.Drawing.Point(822, 375);
             this.UUIDtxtbox.Multiline = true;
             this.UUIDtxtbox.Name = "UUIDtxtbox";
-            this.UUIDtxtbox.Size = new System.Drawing.Size(130, 30);
+            this.UUIDtxtbox.Size = new System.Drawing.Size(291, 30);
             this.UUIDtxtbox.TabIndex = 68;
             this.UUIDtxtbox.TextChanged += new System.EventHandler(this.UUIDtxtbox_TextChanged);
             // 
@@ -749,6 +751,17 @@
             this.Autofillbtn.UseVisualStyleBackColor = false;
             this.Autofillbtn.Click += new System.EventHandler(this.Autofillbtn_Click);
             // 
+            // QRscannedinfoDatagridview
+            // 
+            this.QRscannedinfoDatagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.QRscannedinfoDatagridview.Location = new System.Drawing.Point(808, 73);
+            this.QRscannedinfoDatagridview.Name = "QRscannedinfoDatagridview";
+            this.QRscannedinfoDatagridview.RowHeadersWidth = 51;
+            this.QRscannedinfoDatagridview.RowTemplate.Height = 29;
+            this.QRscannedinfoDatagridview.Size = new System.Drawing.Size(316, 264);
+            this.QRscannedinfoDatagridview.TabIndex = 72;
+            this.QRscannedinfoDatagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.QRscannedinfoDatagridview_CellContentClick);
+            // 
             // QRCODELBL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -758,13 +771,14 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1153, 532);
+            this.Controls.Add(this.QRPICBOXGNRTR);
+            this.Controls.Add(this.QRscannedinfoDatagridview);
             this.Controls.Add(this.Autofillbtn);
             this.Controls.Add(this.UUIDlbl);
             this.Controls.Add(this.UUIDtxtbox);
             this.Controls.Add(this.Saveqrbtn);
             this.Controls.Add(this.GenerateQRbtn);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.QRPICBOXGNRTR);
             this.Controls.Add(this.celsiuslbl);
             this.Controls.Add(this.Datelbl);
             this.Controls.Add(this.DTpicker);
@@ -824,6 +838,7 @@
             this.grpboxfever.ResumeLayout(false);
             this.grpboxfever.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.QRPICBOXGNRTR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.QRscannedinfoDatagridview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -890,5 +905,6 @@
         private TextBox TxtBoxinfo;
         private Label UUIDlbl;
         private Button Autofillbtn;
+        private DataGridView QRscannedinfoDatagridview;
     }
 }
