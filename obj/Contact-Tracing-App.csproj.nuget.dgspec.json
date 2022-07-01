@@ -48,6 +48,10 @@
               "target": "Package",
               "version": "[2.2.5, )"
             },
+            "Microsoft.Azure.WebJobs.Core": {
+              "target": "Package",
+              "version": "[3.0.33, )"
+            },
             "QRCoder": {
               "target": "Package",
               "version": "[1.4.3, )"

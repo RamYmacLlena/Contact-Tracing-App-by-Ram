@@ -175,6 +175,7 @@ namespace Contact_Tracing_App
 
         private void clearbtn_Click(object sender, EventArgs e)
         {
+            UUIDtxtbox.Text = ("");
             nametxtbox.Text = ("");
             addresstxtbox.Text = ("");
             contactnotxtbox.Text = ("");
@@ -321,7 +322,7 @@ namespace Contact_Tracing_App
                 TxtBoxinfo.AppendText(",(Fever, " + FeverAnswer + ")");
                 TxtBoxinfo.AppendText(",(Loss of Taste, " + LossofTasteAnswer + ")");
                 TxtBoxinfo.AppendText(",(Loss of Smell, " + LossofSmellAnswer + ")");
-                TxtBoxinfo.AppendText(",(Date, " + DTpicker.Text + "),");
+                TxtBoxinfo.AppendText(",(Date, " + DTpicker.Text + ")");
 
                 QRCodeGenerator qr = new QRCodeGenerator();
                 QRCodeData data = qr.CreateQrCode(TxtBoxinfo.Text, QRCodeGenerator.ECCLevel.Q);
@@ -348,6 +349,11 @@ namespace Contact_Tracing_App
         private void UUIDtxtbox_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void Autofillbtn_Click(object sender, EventArgs e)
+        {
+            StreamReader Read = new StreamReader("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text");
         }
     }
 }

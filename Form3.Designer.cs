@@ -29,25 +29,26 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RecordsForm));
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.RecordsDataGrid = new System.Windows.Forms.DataGridView();
             this.PersonalDataRecords = new System.Windows.Forms.Label();
             this.Fromlbl = new System.Windows.Forms.Label();
             this.Tolbl = new System.Windows.Forms.Label();
             this.Filterbtn = new System.Windows.Forms.Button();
             this.DTP1 = new System.Windows.Forms.DateTimePicker();
             this.DTP2 = new System.Windows.Forms.DateTimePicker();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RecordsDataGrid)).BeginInit();
             this.SuspendLayout();
             // 
-            // dataGridView1
+            // RecordsDataGrid
             // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 49);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowHeadersWidth = 51;
-            this.dataGridView1.RowTemplate.Height = 29;
-            this.dataGridView1.Size = new System.Drawing.Size(1382, 482);
-            this.dataGridView1.TabIndex = 0;
+            this.RecordsDataGrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.RecordsDataGrid.Location = new System.Drawing.Point(12, 49);
+            this.RecordsDataGrid.Name = "RecordsDataGrid";
+            this.RecordsDataGrid.RowHeadersWidth = 51;
+            this.RecordsDataGrid.RowTemplate.Height = 29;
+            this.RecordsDataGrid.Size = new System.Drawing.Size(1382, 482);
+            this.RecordsDataGrid.TabIndex = 0;
+            this.RecordsDataGrid.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.RecordsDataGrid_CellContentClick);
             // 
             // PersonalDataRecords
             // 
@@ -125,12 +126,12 @@
             this.Controls.Add(this.Tolbl);
             this.Controls.Add(this.Fromlbl);
             this.Controls.Add(this.PersonalDataRecords);
-            this.Controls.Add(this.dataGridView1);
+            this.Controls.Add(this.RecordsDataGrid);
             this.DoubleBuffered = true;
             this.Name = "RecordsForm";
             this.Text = "Data Records ";
             this.Load += new System.EventHandler(this.RecordsForm_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.RecordsDataGrid)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -138,7 +139,7 @@
 
         #endregion
 
-        private DataGridView dataGridView1;
+        private DataGridView RecordsDataGrid;
         private Label PersonalDataRecords;
         private Label Fromlbl;
         private Label Tolbl;

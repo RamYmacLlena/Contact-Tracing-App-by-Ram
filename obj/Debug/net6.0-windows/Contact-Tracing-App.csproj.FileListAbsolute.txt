@@ -46,3 +46,4 @@ C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Con
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact-Tracing-App.csproj.CopyComplete
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\QRCoder.dll
 C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\obj\Debug\net6.0-windows\Contact_Tracing_App.QRCODELBL.resources
+C:\Users\au\source\repos\Contact-Tracing-App-by-Ram\bin\Debug\net6.0-windows\Microsoft.Azure.WebJobs.dll

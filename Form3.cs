@@ -71,7 +71,7 @@ namespace Contact_Tracing_App
                 //var values = row.Split(',');
                 //dt.Rows.Add(row);
             }
-            dataGridView1.DataSource = dt;
+            RecordsDataGrid.DataSource = dt;
             convertDate();
             //string details = string.Join(",", list);
             //label1.Text = dt[0].Item2;
@@ -82,16 +82,16 @@ namespace Contact_Tracing_App
         }
         private void convertDate()
         {
-            int count = dataGridView1.Rows.Count;
+            int count = RecordsDataGrid.Rows.Count;
             count = count - 1;
             for (int i = 0; i < count; i++)
             {
-                var date = dataGridView1[13, i].Value;
+                var date = RecordsDataGrid[13, i].Value;
                 date = date.ToString().Replace(@")", string.Empty);
                 //var dateTrack = Convert.ToDateTime(date);
-                dataGridView1[13, i].Value = date;
+                RecordsDataGrid[13, i].Value = date;
             }
-            dtbl = (DataTable)dataGridView1.DataSource;
+            dtbl = (DataTable)RecordsDataGrid.DataSource;
         }
         private void RecordsForm_Load(object sender, EventArgs e)
         {
@@ -123,7 +123,7 @@ namespace Contact_Tracing_App
             dv.RowFilter =$"[Date Track] >= '{startDate.Date}' AND [Date Track] <= '{endDate.Date}'";
             //((DataTable)dataGridView1.DataSource).DefaultView.RowFilter = string.Format("Name LIKE '%{0}%'", sample);
             //(dataGridView1.DataSource as DataTable).DefaultView.RowFilter = "Name = '{ram}'";
-            dataGridView1.DataSource = dv;
+            RecordsDataGrid.DataSource = dv;
             //dataGridView1.DataSource = dt;
             //dv.RowFilter = $"[Name] = ymac";
             //dataGridView1.DataSource = dt;
@@ -140,6 +140,11 @@ namespace Contact_Tracing_App
             // DataView dv = new DataView();
             // dv = dt.DefaultView;
             // dv.RowFilter = "Date Track >= '" + DTP1.Value.Date + "' and  Date Track <= '" + DTP2.Value.Date + "'";
+        }
+
+        private void RecordsDataGrid_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

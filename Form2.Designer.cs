@@ -87,6 +87,7 @@
             this.UUIDtxtbox = new System.Windows.Forms.TextBox();
             this.TxtBoxinfo = new System.Windows.Forms.TextBox();
             this.UUIDlbl = new System.Windows.Forms.Label();
+            this.Autofillbtn = new System.Windows.Forms.Button();
             this.grpboxfirstdose.SuspendLayout();
             this.grpboxseconddose.SuspendLayout();
             this.grpboxtestedpstv.SuspendLayout();
@@ -355,7 +356,7 @@
             // 
             this.submitbtn.BackColor = System.Drawing.Color.Aqua;
             this.submitbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.submitbtn.Location = new System.Drawing.Point(341, 481);
+            this.submitbtn.Location = new System.Drawing.Point(252, 481);
             this.submitbtn.Name = "submitbtn";
             this.submitbtn.Size = new System.Drawing.Size(123, 39);
             this.submitbtn.TabIndex = 45;
@@ -367,7 +368,7 @@
             // 
             this.clearbtn.BackColor = System.Drawing.Color.Aqua;
             this.clearbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.clearbtn.Location = new System.Drawing.Point(114, 482);
+            this.clearbtn.Location = new System.Drawing.Point(33, 481);
             this.clearbtn.Name = "clearbtn";
             this.clearbtn.Size = new System.Drawing.Size(144, 39);
             this.clearbtn.TabIndex = 46;
@@ -379,7 +380,7 @@
             // 
             this.exitbtn.BackColor = System.Drawing.Color.Aqua;
             this.exitbtn.Font = new System.Drawing.Font("Showcard Gothic", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.exitbtn.Location = new System.Drawing.Point(574, 481);
+            this.exitbtn.Location = new System.Drawing.Point(454, 481);
             this.exitbtn.Name = "exitbtn";
             this.exitbtn.Size = new System.Drawing.Size(123, 39);
             this.exitbtn.TabIndex = 47;
@@ -736,6 +737,18 @@
             this.UUIDlbl.TabIndex = 70;
             this.UUIDlbl.Text = "UUID";
             // 
+            // Autofillbtn
+            // 
+            this.Autofillbtn.BackColor = System.Drawing.Color.Aqua;
+            this.Autofillbtn.Font = new System.Drawing.Font("Showcard Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.Autofillbtn.Location = new System.Drawing.Point(652, 479);
+            this.Autofillbtn.Name = "Autofillbtn";
+            this.Autofillbtn.Size = new System.Drawing.Size(133, 39);
+            this.Autofillbtn.TabIndex = 71;
+            this.Autofillbtn.Text = "Auto-fill";
+            this.Autofillbtn.UseVisualStyleBackColor = false;
+            this.Autofillbtn.Click += new System.EventHandler(this.Autofillbtn_Click);
+            // 
             // QRCODELBL
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
@@ -745,6 +758,7 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1153, 532);
+            this.Controls.Add(this.Autofillbtn);
             this.Controls.Add(this.UUIDlbl);
             this.Controls.Add(this.UUIDtxtbox);
             this.Controls.Add(this.Saveqrbtn);
@@ -875,5 +889,6 @@
         private TextBox UUIDtxtbox;
         private TextBox TxtBoxinfo;
         private Label UUIDlbl;
+        private Button Autofillbtn;
     }
 }
