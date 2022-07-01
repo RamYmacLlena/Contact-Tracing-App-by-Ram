@@ -84,9 +84,9 @@
             this.label3 = new System.Windows.Forms.Label();
             this.GenerateQRbtn = new System.Windows.Forms.Button();
             this.Saveqrbtn = new System.Windows.Forms.Button();
-            this.optionallbl = new System.Windows.Forms.Label();
             this.UUIDtxtbox = new System.Windows.Forms.TextBox();
             this.TxtBoxinfo = new System.Windows.Forms.TextBox();
+            this.UUIDlbl = new System.Windows.Forms.Label();
             this.grpboxfirstdose.SuspendLayout();
             this.grpboxseconddose.SuspendLayout();
             this.grpboxtestedpstv.SuspendLayout();
@@ -664,9 +664,9 @@
             // QRPICBOXGNRTR
             // 
             this.QRPICBOXGNRTR.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-            this.QRPICBOXGNRTR.Location = new System.Drawing.Point(793, 92);
+            this.QRPICBOXGNRTR.Location = new System.Drawing.Point(793, 58);
             this.QRPICBOXGNRTR.Name = "QRPICBOXGNRTR";
-            this.QRPICBOXGNRTR.Size = new System.Drawing.Size(348, 300);
+            this.QRPICBOXGNRTR.Size = new System.Drawing.Size(348, 312);
             this.QRPICBOXGNRTR.TabIndex = 63;
             this.QRPICBOXGNRTR.TabStop = false;
             // 
@@ -676,7 +676,7 @@
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Showcard Gothic", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label3.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.label3.Location = new System.Drawing.Point(808, 52);
+            this.label3.Location = new System.Drawing.Point(808, 18);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(323, 37);
             this.label3.TabIndex = 64;
@@ -706,36 +706,35 @@
             this.Saveqrbtn.UseVisualStyleBackColor = false;
             this.Saveqrbtn.Click += new System.EventHandler(this.Saveqrbtn_Click);
             // 
-            // optionallbl
-            // 
-            this.optionallbl.AutoSize = true;
-            this.optionallbl.BackColor = System.Drawing.Color.Transparent;
-            this.optionallbl.Font = new System.Drawing.Font("Showcard Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.optionallbl.ImageAlign = System.Drawing.ContentAlignment.TopLeft;
-            this.optionallbl.Location = new System.Drawing.Point(793, 18);
-            this.optionallbl.Name = "optionallbl";
-            this.optionallbl.Size = new System.Drawing.Size(104, 23);
-            this.optionallbl.TabIndex = 67;
-            this.optionallbl.Text = "Optional:";
-            // 
             // UUIDtxtbox
             // 
             this.UUIDtxtbox.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.UUIDtxtbox.Location = new System.Drawing.Point(826, 401);
+            this.UUIDtxtbox.Location = new System.Drawing.Point(901, 376);
             this.UUIDtxtbox.Multiline = true;
             this.UUIDtxtbox.Name = "UUIDtxtbox";
-            this.UUIDtxtbox.Size = new System.Drawing.Size(281, 23);
+            this.UUIDtxtbox.Size = new System.Drawing.Size(130, 30);
             this.UUIDtxtbox.TabIndex = 68;
             this.UUIDtxtbox.TextChanged += new System.EventHandler(this.UUIDtxtbox_TextChanged);
             // 
             // TxtBoxinfo
             // 
             this.TxtBoxinfo.Font = new System.Drawing.Font("Times New Roman", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.TxtBoxinfo.Location = new System.Drawing.Point(808, 104);
+            this.TxtBoxinfo.Location = new System.Drawing.Point(808, 86);
             this.TxtBoxinfo.Multiline = true;
             this.TxtBoxinfo.Name = "TxtBoxinfo";
             this.TxtBoxinfo.Size = new System.Drawing.Size(323, 276);
             this.TxtBoxinfo.TabIndex = 69;
+            // 
+            // UUIDlbl
+            // 
+            this.UUIDlbl.AutoSize = true;
+            this.UUIDlbl.BackColor = System.Drawing.Color.Transparent;
+            this.UUIDlbl.Font = new System.Drawing.Font("Showcard Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.UUIDlbl.Location = new System.Drawing.Point(936, 408);
+            this.UUIDlbl.Name = "UUIDlbl";
+            this.UUIDlbl.Size = new System.Drawing.Size(53, 21);
+            this.UUIDlbl.TabIndex = 70;
+            this.UUIDlbl.Text = "UUID";
             // 
             // QRCODELBL
             // 
@@ -746,8 +745,8 @@
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1153, 532);
+            this.Controls.Add(this.UUIDlbl);
             this.Controls.Add(this.UUIDtxtbox);
-            this.Controls.Add(this.optionallbl);
             this.Controls.Add(this.Saveqrbtn);
             this.Controls.Add(this.GenerateQRbtn);
             this.Controls.Add(this.label3);
@@ -873,8 +872,8 @@
         private Label label3;
         private Button GenerateQRbtn;
         private Button Saveqrbtn;
-        private Label optionallbl;
         private TextBox UUIDtxtbox;
         private TextBox TxtBoxinfo;
+        private Label UUIDlbl;
     }
 }

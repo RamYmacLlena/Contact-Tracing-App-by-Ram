@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(QR_Code));
             this.CameraComboBoxDevice = new System.Windows.Forms.ComboBox();
             this.camerapicbox = new System.Windows.Forms.PictureBox();
             this.Scanbtn = new System.Windows.Forms.Button();
             this.cameralbl = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.timerscan = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.camerapicbox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -78,14 +79,16 @@
             this.cameralbl.TabIndex = 3;
             this.cameralbl.Text = "Camera :";
             // 
-            // timer1
+            // timerscan
             // 
-            this.timer1.Tick += new System.EventHandler(this.TimerWebcam);
+            this.timerscan.Tick += new System.EventHandler(this.TimerWebcam);
             // 
             // QR_Code
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(800, 461);
             this.Controls.Add(this.cameralbl);
             this.Controls.Add(this.Scanbtn);
@@ -107,6 +110,6 @@
         private PictureBox camerapicbox;
         private Button Scanbtn;
         private Label cameralbl;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Timer timerscan;
     }
 }

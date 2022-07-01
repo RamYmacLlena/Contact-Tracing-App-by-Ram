@@ -35,6 +35,8 @@ namespace Contact_Tracing_App
         {
             captureDevice = new VideoCaptureDevice(filterInfoCollection[CameraComboBoxDevice.SelectedIndex].MonikerString);
             captureDevice.NewFrame += CaptureDevice_NewFrame;
+            captureDevice.Start();
+            timerscan.Start();
         }
 
         private void CaptureDevice_NewFrame(object sender, AForge.Video.NewFrameEventArgs eventArgs)
@@ -45,7 +47,10 @@ namespace Contact_Tracing_App
         private void CloseForm(object sender, FormClosingEventArgs e)
         {
             if (captureDevice.IsRunning)
-                captureDevice.Stop();
+            {
+                captureDevice.SignalToStop();
+                captureDevice.WaitForStop();
+            }
         }
 
         private void TimerWebcam(object sender, EventArgs e)
@@ -56,7 +61,12 @@ namespace Contact_Tracing_App
                 Result result = barcodeReader.Decode((Bitmap)camerapicbox.Image);
                 if (result != null)
                 {
-                    
+                    StreamWriter file = File.CreateText("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text");
+                    file.Write(result.ToString());
+                    file.Close();
+
+                    StreamReader Read = new StreamReader("D:\\DESKTOP\\Ram Ymac\\EDUCATION\\OOP\\Contact Tracing QR Codes Read\\QR Scan to Read.Text");
+
                 }
 
             }

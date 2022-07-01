@@ -23,5 +23,11 @@ namespace Contact_Tracing_App
             RecordsForm form = new RecordsForm();
             form.Show();
         }
+
+        private void ScanQRcodebtn_Click(object sender, EventArgs e)
+        {
+            QR_Code qR_Code = new QR_Code();
+            qR_Code.Show();
+        }
     }
 }

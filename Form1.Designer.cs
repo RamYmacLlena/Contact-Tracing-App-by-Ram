@@ -109,6 +109,7 @@
             this.ScanQRcodebtn.TabIndex = 5;
             this.ScanQRcodebtn.Text = "SCAN YOUR QR CODE";
             this.ScanQRcodebtn.UseVisualStyleBackColor = false;
+            this.ScanQRcodebtn.Click += new System.EventHandler(this.ScanQRcodebtn_Click);
             // 
             // StartForm
             // 

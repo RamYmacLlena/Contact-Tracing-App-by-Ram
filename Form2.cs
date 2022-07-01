@@ -303,32 +303,25 @@ namespace Contact_Tracing_App
             }
             else
             {
-                TxtBoxinfo.AppendText("Name: " + nametxtbox.Text);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Address: " + addresstxtbox.Text);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Contact Number: " + contactnotxtbox.Text);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Contact Number: " + contactnotxtbox.Text);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Age: " + agetxtbox.Text);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Sex: " + sextxtbox.Text);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Temperature: " + temperaturetxtbox.Text);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("First Dose: " + FirstDoseAnswer);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Second Dose: " + SecondDoseAnswer);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Have you had contact with someone who tested positive? " + TestPositiveAnswer);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Fever? " + FeverAnswer);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Loss of Taste? " + LossofTasteAnswer);
-                TxtBoxinfo.AppendText(Environment.NewLine);
-                TxtBoxinfo.AppendText("Loss of Smell? " + LossofSmellAnswer);
-                TxtBoxinfo.AppendText(Environment.NewLine);
+               // ("UUID", nametxtbox.Text + DateTime.Now.ToString("HHmmss")), ("Name", nametxtbox.Text), ("Address", addresstxtbox.Text),
+                //    ("Contact Number", contactnotxtbox.Text), ("Age", agetxtbox.Text),  ("Sex", sextxtbox.Text), ("Temperature", temperaturetxtbox.Text),
+                //    ("First Dose", FirstDoseAnswer), ("Second Dose", SecondDoseAnswer), ("Have had contact with someone who tested postive", TestPositiveAnswer),
+                 //   ("Fever", FeverAnswer), ("Loss of Taste", LossofTasteAnswer), ("Loss of Smell", LossofSmellAnswer), ("Date", DTpicker.Text),
+
+                TxtBoxinfo.AppendText("(UUID, " + UUIDtxtbox.Text + ")");
+                TxtBoxinfo.AppendText(",(Name, " + nametxtbox.Text + ")");
+                TxtBoxinfo.AppendText(",(Address, " + addresstxtbox.Text + ")");
+                TxtBoxinfo.AppendText(",(Contact Number, " + contactnotxtbox.Text + ")");
+                TxtBoxinfo.AppendText(",(Age, " + agetxtbox.Text + ")");
+                TxtBoxinfo.AppendText(",(Sex, " + sextxtbox.Text + ")");
+                TxtBoxinfo.AppendText(",(Temperature, " + temperaturetxtbox.Text + ")");
+                TxtBoxinfo.AppendText(",(First Dose, " + FirstDoseAnswer + ")");
+                TxtBoxinfo.AppendText(",(Second Dose, " + SecondDoseAnswer + ")");
+                TxtBoxinfo.AppendText(",(Have you had contact with someone who tested positive, " + TestPositiveAnswer + ")");
+                TxtBoxinfo.AppendText(",(Fever, " + FeverAnswer + ")");
+                TxtBoxinfo.AppendText(",(Loss of Taste, " + LossofTasteAnswer + ")");
+                TxtBoxinfo.AppendText(",(Loss of Smell, " + LossofSmellAnswer + ")");
+                TxtBoxinfo.AppendText(",(Date, " + DTpicker.Text + "),");
 
                 QRCodeGenerator qr = new QRCodeGenerator();
                 QRCodeData data = qr.CreateQrCode(TxtBoxinfo.Text, QRCodeGenerator.ECCLevel.Q);
